@@ -1,0 +1,570 @@
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+	margin: 0;
+	padding: 0;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+ul {
+	list-style: none;
+}
+li {
+	/*float: left;*/
+}
+a:link, a:visited {
+	text-decoration: none;
+}
+body{
+    min-width: 320px;
+    background: #f3f3f3;
+    font-family: microsoft yahei,simhei;
+}
+img{
+    display: block
+}
+.clear{
+	clear:both;}
+	#main {
+    width: 100%;
+}
+.orange{
+    color: #f60;
+    font:24px/49px microsoft yahei,simhei;
+}
+.hotel-img-box {
+    position: relative;
+    width: 100%;
+}
+.hotel-img-box img {
+    width: 100%;
+}
+.img-info {
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    font: 12px/20px Microsoft YaHei,SimHei;
+}
+.mask-bg {
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
+.img-info p {
+    padding: 0 10px;
+}
+.num {
+    font-family: Arial !important;
+}
+.hotel-info>li {
+    position: relative;
+    width: 100%;
+    height: 49px;
+    padding: 0 30px 0 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    font: 16px/49px Microsoft YaHei,SimHei;
+}
+/*.hotel-info>li:before {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    content: "";
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}*/
+.hotel-add {
+    width: 76%;
+}
+
+.text-ell {
+        overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.rooms-list-box {
+    width: 100%;
+    background: #fff;
+    margin: 10px 0;
+}
+.rooms-date-change li {
+    position: relative;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    /*padding-left: 10px;*/
+}
+.rooms-date-change li:before {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    content: "";
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.rooms-date-change li {
+    position: relative;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    /*padding-left: 10px;*/
+    background: #fff;
+}
+.rooms-date-change {
+    height: 49px;
+    border-bottom: 1px solid #ddd;
+    font: 16px/49px Microsoft YaHei,SimHei;
+    /*text-align: center;*/
+    text-indent: 1em;
+}
+.rooms-list>li {
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 10px;
+}
+.room-img {
+    float: left;
+    width: 90px;
+    height: 65px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.room-img img {
+    height: 65px;
+    margin: 0 auto;
+}
+.room-details h4 {
+    font: 16px Microsoft YaHei,SimHei;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-bottom: 5px;
+}
+.room-details-role {
+    overflow: hidden;
+}
+.room-info {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font: 12px/25px Microsoft YaHei,SimHei;
+    width: 70%;
+}
+.room-info span {
+    margin-right: 5px;
+}
+.room-price {
+    font-size: 12px;
+}
+.room-price b {
+    color: #f60;
+    font-size: 20px;
+}
+.room-price b small {
+    font-size: 12px;
+}
+.book-btn {
+    width: 55px;
+    height: 26px;
+    background: #f60;
+    border-radius: 3px;
+    border: none;
+    font: 14px/24px Microsoft YaHei,SimHei;
+    color: #fff;
+}
+.section {
+    background: #fff;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.section h3 {
+    padding: 0 10px;
+    font: 16px/30px Microsoft YaHei,SimHei;
+    border-bottom: 1px solid #ddd;
+    float: left;
+}
+.abstract {
+    padding: 10px 20px 20px 10px;
+    color: #888;
+    font: 14px/24px Microsoft YaHei,SimHei;
+}
+.traffic-info-list {
+    color: #888;
+    font: 14px/50px Microsoft YaHei,SimHei;
+}
+.traffic-info-list li {
+    position: relative;
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.near-add {
+    float: left;
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.near-distance {
+    float: right;
+    color: #1d79d9;
+}
+.tc-details{
+    background: #fff;
+}
+.tc-details .tab{
+    width: 90%;
+    padding: 0 5%;
+    height: 49px;
+    border-bottom: 1px solid #ddd;
+}
+.tc-details .tab>li{
+    width: 30%;
+    font: 18px/47px Microsoft YaHei,simhei;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    display: none;
+}
+.tc-details .tab>.cur{
+    border-bottom: 2px solid #f60;
+    display: block;
+}
+.tc-box{
+    background: #fff;
+    width: 96%;
+    padding: 10px 2%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.tc-box li{
+    padding: 0 7px;
+    height: 28px;
+    border:1px solid #ddd;
+    border-radius: 2px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #666;
+    font:14px/28px Microsoft  yahei,simhei;
+
+}
+.tc-box .cur{
+    background: #6cba2b;
+    color: #fff;
+    border-color: #6cba2b;
+}
+/*****************/
+.date-page{
+    width: 100%;
+    display: none;
+}
+.date-page .back,.select-page .back{
+    width: 20px;
+    height: 20px;
+    border-left: 1px solid #333;
+    border-top: 1px solid #333;
+    transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    position: absolute;
+    top: 14px;
+    left: 17px;
+    z-index: 999;
+}
+.top{
+    width: 100%;
+    height:50px;
+    text-align: center;
+    font:18px/50px microsoft yahei,simhei;
+    background: #fff;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.rooms-list{
+    background: #fff;
+    margin-bottom: 10px;
+}
+.select-page{
+    display: none;
+    padding-bottom: 50px;
+}
+.tc-box h3{
+    font:normal 16px Microsoft yahei,simhei;
+    margin-bottom: 10px;
+    color: #666;
+}
+.sy{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border:1px solid #999;
+    color: #333;
+    text-align: center;
+    font:14px/28px Arial,simsun;
+    float: left;
+}
+.buy-num-input{
+    width: 50px;
+    border:1px solid #999;
+    text-align: center;
+    height: 28px;
+    vertical-align: bottom;
+    float: left;
+    margin:0 -1px;
+}
+.buy-num{
+    overflow: hidden;
+}
+.buy-btn{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    font: 18px/40px Microsoft yahei,simhei;
+    background: #f60;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+}
+/*分离jqueryui样式*/
+.ui-datepicker {
+    /*width: 40em;*/
+    width: 100%;
+    /*padding: .2em .2em 0;*/
+    display: none;
+    border: 0 !important;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+
+    display: none;  
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+    display: inline;
+}
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active{
+        height: 45px;
+        text-align: center;
+}
+.ui-widget-content .ui-icon {
+    background-image: url("../images/ui-icons_444444_256x240.png");
+}
+.ui-widget-header .ui-icon {
+    background-image: url("../images/ui-icons_444444_256x240.png");
+}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon,
+.ui-button:hover .ui-icon,
+.ui-button:focus .ui-icon {
+    background-image: url("../images/ui-icons_555555_256x240.png");
+}
+.ui-datepicker td{
+    position: relative;
+}
+.room-price-d{
+    position: absolute;
+    top: 20px;
+    left:0;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    color: #f60;
+    font-family: microsoft yahei,simhei;
+}
+.room-num{
+    position: absolute;
+    top: 36px;
+    left:0;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    color:#999;
+    font:14px simsun,simhei;
+}
+.ui-datepicker-current-day .room-price ,.ui-datepicker-current-day .room-num{
+    color:#fff;
+}
+.ui-datepicker-today .room-price,.ui-datepicker-today .room-num{
+    color: #000;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+    width:100%;
+}
+.ui-datepicker td span, .ui-datepicker td a {
+    height: 45px;
+    text-align: center;
+}
+.ui-datepicker{
+    padding: 0;
+}
+/***********************/
+.tc-details .tab>li{
+    float: left;
+    display: block;
+}
+.tab-box{
+    display: none;
+
+}
+.tab-box.cur{
+    display: block;
+}
+.pic-text{
+    padding: 10px;
+    font:14px/24px microsoft yahei,simhei;
+    color: #666;
+    text-indent: 1em;
+}
+
+
+
+.img-info {
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    font: 16px/40px Microsoft YaHei,SimHei;
+}
+.mask-bg {
+    background: rgba(0,0,0,0.2);
+}
+.buy-num{
+    float: left;
+    margin-right: 10px;
+}
+.Stock{
+    float: left;
+    font: 14px/30px microsoft yahei,simhei;
+}
+.tc-box{
+    overflow: hidden;
+}
+
+
+/****团购*****/
+.yu-tmar10{
+    margin-top: 10px;
+}
+.yu-textc{
+    text-align: center;
+}
+.yu-font12{
+    font-size: 12px;
+}
+.yu-font20{
+    font-size: 20px;
+}
+.yu-font26{
+    font-size: 26px;
+}
+.yu-orange{
+    color: #f60;
+}
+.yu-grey{
+        color: #8c8c8c;
+}
+.yu-line20{
+    line-height: 20px;
+}
+.yu-line24{
+    line-height: 24px;
+}
+.yu-line30{
+    line-height: 30px;
+}
+.yu-arr{
+    position: relative;
+}
+.yu-arr:before{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-right:2px solid #ccc;
+    border-bottom:2px solid #ccc;
+    transform:rotate(-45deg);
+    right: 5px;
+    content: "";
+    top: 6px;
+}
+.yu-green{
+    color: #6cba2b;
+}
+.yu-yellow{
+    color:#ffc107;
+}
+.yu-red{
+    color:#f00;
+}
+.yu-rmar20{
+    margin-right: 20px;
+}
+.yu-grid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.yu-pa10 {
+    padding: 10px;
+}
+.yu-overflow{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+}
+
+
+/*************/
+.yu-arr.arr-type1:before{
+    top: 2px;
+}
+.yu-blue{
+    color: #17a7d0;
+}
+.order-btn.over{
+    background: #8c8c8c;
+    height: 45px;
+}
+.order-btn.over:before{
+    content: "订完";
+    line-height: 45px;
+}
+.yu-line60{
+    line-height: 60px;
+}
+
+
+.yu-blue{
+    color: #00a0e9;
+}

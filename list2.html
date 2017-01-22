@@ -1,0 +1,224 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="keywords" content="关键词1,关键词2,关键词3" />
+<meta name="description" content="对网站的描述" />
+<meta name="format-detection" content="telephone=no">
+<!--自动将网页中的电话号码显示为拨号的超链接-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!--width宽度height高度，initial-scale初始的缩放比例，minimum-scale允许缩放到的最小比例，maximum-scale允许缩放到的最大比例，user-scalable是否可以手动缩放-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--IOS设备-->
+<meta name="apple-touch-fullscreen" content="yes">
+<!--IOS设备-->
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<title>标题</title>
+<link type="text/css" rel="stylesheet" href="css/sale-date.css"/>
+<link type="text/css" rel="stylesheet" href="css/list.css"/>
+<link type="text/css" rel="stylesheet" href="css/iconfont/iconfont.css"/>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
+
+<script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+    <div class="base-page list2">
+   
+
+
+    <div id="wrapper">
+  <div id="scroller">
+ 
+   <div id="pullDown">
+    <span class="pullDownIcon"></span><span class="pullDownLabel">下拉刷新...</span>
+   </div>
+    <ul class="rooms-list sp" id="thelist">
+          <li>
+            <a href="#">
+            <div class="room-content-head yu-grid">
+              <div class="room-pic tuan">
+                <img src="images/room_03.png" />
+              </div>
+              <div class="yu-overflow">
+                <div class="room-name yu-bmar10">标准双床房</div>
+                <div>
+                  <i class="yu-font14 yu-orange">￥168</i>
+                  <i class="yu-font12 yu-grey yu-linethrough">￥199</i>
+                </div>
+                <div ><span class="yu-font12 yu-grey">15㎡ 双床1.2m 无窗 有wifi15㎡ 双床</span></div>
+                <p class=" yu-font12 yu-grey yu-line26">
+                  <i class="iconfont yu-yellow">&#xe601;</i>
+                  <i class="iconfont yu-yellow">&#xe60a;</i>
+                  <i class="iconfont yu-yellow">&#xe612;</i>
+                  <i class="iconfont yu-yellow">&#xe613;</i>
+
+                </p>
+              </div>
+              <div class="yu-btn yu-tmar30">查看详情</div>
+            </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <div class="room-content-head yu-grid ">
+     <div class="room-pic yu">
+                <img src="images/room_03.png" />
+              </div>          
+              <div class="yu-overflow">
+                <div class="room-name yu-bmar10">标准双床房标准双床房标准双床房标准双床房标</div>
+     <div>
+                  <i class="yu-font14 yu-orange">￥168</i>
+                  <i class="yu-font12 yu-grey yu-linethrough">￥199</i>
+                </div>            
+                <div><span class="yu-font12 yu-grey">15㎡ 双床1.2m 无窗 有wifi</span></div>
+                <p class="yu-font12 yu-grey yu-line26">
+                              <i class="iconfont yu-yellow">&#xe601;</i>
+                              <i class="iconfont yu-yellow">&#xe60a;</i>
+                              <i class="iconfont yu-yellow">&#xe612;</i>
+                              <i class="iconfont yu-yellow">&#xe613;</i>
+
+                </p>            
+              </div>
+              <div class="yu-btn yu-tmar30">查看详情</div>
+            </div>
+            </a>
+          </li>      
+
+
+
+     
+        </ul> 
+
+ <div id="pullUp">
+    <span class="pullUpIcon"></span><span class="pullUpLabel">上拉加载更多...</span>
+   </div>
+ 
+  </div>
+ </div>
+ 
+
+
+
+
+
+    </div>
+
+    <script type="text/javascript">
+    var myLi='<li><a href="#"><div class="room-content-head yu-grid"><div class="room-pic tuan"><img src="images/room_03.png" /></div><div class="yu-overflow"><div class="room-name yu-bmar10">标准双床房</div><div><i class="yu-font14 yu-orange">￥168</i><i class="yu-font12 yu-grey yu-linethrough">￥199</i></div><div ><span class="yu-font12 yu-grey">15㎡ 双床1.2m 无窗 有wifi15㎡ 双床</span></div><p class=" yu-font12 yu-grey yu-line26"><i class="iconfont yu-yellow">&#xe601;</i><i class="iconfont yu-yellow">&#xe60a;</i><i class="iconfont yu-yellow">&#xe612;</i><i class="iconfont yu-yellow">&#xe613;</i></p></div><div class="yu-btn yu-tmar30">查看详情</div></div></a></li>';
+
+     var myScroll,
+ pullDownEl, pullDownOffset,
+ pullUpEl, pullUpOffset,
+ generatedCount = 0;
+ 
+/**
+ * 下拉刷新 （自定义实现此方法）
+ * myScroll.refresh();  // 数据加载完成后，调用界面更新方法
+ */
+function pullDownAction () {
+ setTimeout(function () { // <-- Simulate network congestion, remove setTimeout from production!
+  var el, li, i;
+  el = document.getElementById('thelist');
+ 
+  for (i=0; i<1; i++) {
+   li = document.createElement('li');
+   // li.innerText = '添加三冰 ' + (++generatedCount);
+   li.innerHTML=myLi;
+
+   el.insertBefore(li, el.childNodes[0]);
+  }
+ 
+  myScroll.refresh();  //数据加载完成后，调用界面更新方法 Remember to refresh when contents are loaded (ie: on ajax completion)
+ }, 1000); // <-- Simulate network congestion, remove setTimeout from production!
+}
+ 
+/**
+ * 滚动翻页 （自定义实现此方法）
+ * myScroll.refresh();  // 数据加载完成后，调用界面更新方法
+ */
+function pullUpAction () {
+ setTimeout(function () { // <-- Simulate network congestion, remove setTimeout from production!
+  var el, li, i;
+  el = document.getElementById('thelist');
+ 
+  for (i=0; i<1; i++) {
+   li = document.createElement('li');
+   // li.innerText = '添加三冰 ' + (++generatedCount);
+   li.innerHTML=myLi;
+   el.appendChild(li, el.childNodes[0]);
+  }
+ 
+  myScroll.refresh();  // 数据加载完成后，调用界面更新方法 Remember to refresh when contents are loaded (ie: on ajax completion)
+ }, 1000); // <-- Simulate network congestion, remove setTimeout from production!
+}
+ 
+/**
+ * 初始化iScroll控件
+ */
+function loaded() {
+ pullDownEl = document.getElementById('pullDown');
+ pullDownOffset = pullDownEl.offsetHeight;
+ pullUpEl = document.getElementById('pullUp'); 
+ pullUpOffset = pullUpEl.offsetHeight;
+ 
+ myScroll = new iScroll('wrapper', {
+  scrollbarClass: 'myScrollbar', /* 重要样式 */
+  useTransition: false, /* 此属性不知用意，本人从true改为false */
+  topOffset: pullDownOffset,
+  onRefresh: function () {
+   if (pullDownEl.className.match('loading')) {
+    pullDownEl.className = '';
+    pullDownEl.querySelector('.pullDownLabel').innerHTML = '下拉刷新...';
+   } else if (pullUpEl.className.match('loading')) {
+    pullUpEl.className = '';
+    pullUpEl.querySelector('.pullUpLabel').innerHTML = '上拉加载更多...';
+   }
+  },
+  onScrollMove: function () {
+   if (this.y > 5 && !pullDownEl.className.match('flip')) {
+    pullDownEl.className = 'flip';
+    pullDownEl.querySelector('.pullDownLabel').innerHTML = '松手开始更新...';
+    this.minScrollY = 0;
+   } else if (this.y < 5 && pullDownEl.className.match('flip')) {
+    pullDownEl.className = '';
+    pullDownEl.querySelector('.pullDownLabel').innerHTML = '下拉刷新...';
+    this.minScrollY = -pullDownOffset;
+   } else if (this.y < (this.maxScrollY - 5) && !pullUpEl.className.match('flip')) {
+    pullUpEl.className = 'flip';
+    pullUpEl.querySelector('.pullUpLabel').innerHTML = '松手开始更新...';
+    this.maxScrollY = this.maxScrollY;
+   } else if (this.y > (this.maxScrollY + 5) && pullUpEl.className.match('flip')) {
+    pullUpEl.className = '';
+    pullUpEl.querySelector('.pullUpLabel').innerHTML = '上拉加载更多...';
+    this.maxScrollY = pullUpOffset;
+   }
+  },
+  onScrollEnd: function () {
+   if (pullDownEl.className.match('flip')) {
+    pullDownEl.className = 'loading';
+    pullDownEl.querySelector('.pullDownLabel').innerHTML = '加载中...';    
+    pullDownAction(); // Execute custom function (ajax call?)
+   } else if (pullUpEl.className.match('flip')) {
+    pullUpEl.className = 'loading';
+    pullUpEl.querySelector('.pullUpLabel').innerHTML = '加载中...';    
+    pullUpAction(); // Execute custom function (ajax call?)
+   }
+  }
+ });
+ 
+ setTimeout(function () { document.getElementById('wrapper').style.left = '0'; }, 800);
+}
+ 
+//初始化绑定iScroll控件 
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+document.addEventListener('DOMContentLoaded', loaded, false);
+
+
+$(function(){
+  $("#wrapper").height($(window).height())
+})
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+/*房型列表*/
+
+.room-name{
+
+}
+
+.price-wrap{
+    margin-right: 30px;
+}
+.room-content-head{
+    position: relative;
+    padding:10px;
+}
+.room-content-head:before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    transform:rotate(45deg);
+    position: absolute;
+    right:5px;
+    top: 19px;
+}
+.room-content-head.cur:before{
+    transform:rotate(-135deg);
+}
+.room-content>li{
+    background: #eee;
+    padding: 10px;
+}
+i,b,em{
+    font-weight: normal;
+    font-style: normal;
+}
+.room-price-wrap{
+    text-align: right;
+    margin-right: 10px;
+}
+.order-btn{
+    width: 48px;
+    background: #00a0e9;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 7px;
+}
+.order-btn:before{
+    content:"订";
+    line-height: 1.6;
+    display: block;
+}
+.order-btn span{
+    display: block;
+    color: #00a0e9;
+    background: #fff;
+    border:1px solid ;
+    font-size: 14px;
+    border-radius: 0 0 5px 5px;
+}
+.order-btn .type1{
+    color: #999;
+}
+.room-content{
+    display: none;
+}
+.room-content.cur{
+    display: block;
+}
+.rooms-list.sp>li{
+    padding: 0;
+}
+/************end******************/
+.list-head{
+	background: #fff;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.top-img{
+	width: 150px;
+	height: 100px;
+	overflow:hidden;
+	margin-right: 10px;
+}
+.top-img img{
+	width: 100%;
+}
+
+.room-content-head .room-pic{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 5px;
+}
+.room-content-head .room-pic img{
+    display: block;
+    height: 70px;
+    margin: 0 auto;
+}
+.room-pic-num{
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    padding:2px 3px ;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+/*******list2*******/
+.list2 .room-content-head:before{
+    display: none;
+}
+.yu-linethrough{
+        text-decoration: line-through;
+}
+.list2 .tuan:before{
+    width: 50px;
+    height: 20px;
+    content: "团购";
+    /*border-radius: 50%;*/
+    background: #00a0e9;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+}
+.list2 .yu:before{
+    width: 50px;
+    height: 20px;
+    content: "预售";
+    /*border-radius: 50%;*/
+    background: #00a0e9;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+}
+.list2 .room-content-head .room-pic{
+    width: 100px;
+    height: 100px;
+}
+.list2 .room-content-head .room-pic img{
+    height: 100px;
+}
+.yu-bmar10{
+    margin-bottom: 10px;
+}
+.list2 .room-name{
+    height: 32px;
+    font-weight: bold;
+    color: #4b566a;
+}
+.yu-btn{
+    padding:0 5px ;
+    background: #00a0e9;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.yu-tmar30{
+    margin-top: 30px;
+}
+
+.slide-fresh{
+    text-align: center;
+}
+.slide-fresh img{
+    width: 16px;
+    display: inline;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+
+
+.rooms-list.sp{
+    margin-bottom: 0
+}
+#pullDown, #pullUp {
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    font-size: 14px;
+    color: #888;
+}
+#pullDown .pullDownIcon, #pullUp .pullUpIcon {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: url(pull-icon@2x.png) 0 0 no-repeat;
+    -webkit-background-size: 40px 80px;
+    background-size: 40px 80px;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 250ms;
+}
+
+/********list2end*********/
