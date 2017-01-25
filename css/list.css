@@ -197,17 +197,40 @@ i,b,em{
     font-weight: bold;
     font-size: 14px;
     color: #888;
+    text-align: center;
 }
 #pullDown .pullDownIcon, #pullUp .pullUpIcon {
     display: block;
     float: left;
-    width: 40px;
-    height: 40px;
-    background: url(pull-icon@2x.png) 0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    background: url(../images/pull-icon@2x.png) 0 0 no-repeat;
     -webkit-background-size: 40px 80px;
     background-size: 40px 80px;
     -webkit-transition-property: -webkit-transform;
     -webkit-transition-duration: 250ms;
+    background-size:100%; 
+    margin-top: 10px;
+    position: relative;
+    left: 120px;
 }
 
+.no-more-row {
+    padding: 10px 0;
+}
+.no-more-row .border{
+    width:200px;
+    height: 10px;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+}
+.no-more-row p{
+    font: 16px microsoft yahei,simhei;
+    width: 90px;
+    background: #f3f3f3;
+    text-align: center;
+    color: #999;
+    margin: 0 auto;
+    margin-top: -12px;
+}
 /********list2end*********/

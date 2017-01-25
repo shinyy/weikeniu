@@ -17,27 +17,38 @@
 <title>标题</title>
 <link type="text/css" rel="stylesheet" href="css/jquery-ui.css"/>
 <link type="text/css" rel="stylesheet" href="css/sale-date.css"/>
+<link type="text/css" rel="stylesheet" href="css/swiper-3.4.1.min.css"/>
+
 
 
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.1.jquery.min.js"></script>
 
 <script type="text/javascript" src="js/js.js"></script>
 </head>
 <body>
 <div class="base-page">
 <div id="main">
-  <div class="hotel-img-box"> <img src="images/114.png" />
+  <div class="hotel-img-box swiper-container swiper-container-horizontal">
+    <div class="swiper-wrapper">
+      
+        <div class="swiper-slide"><img src="images/114.png" /></div>
+        <div class="swiper-slide"><img src="images/114.png" /></div>
+        <div class="swiper-slide"><img src="images/114.png" /></div>
+
+    </div>
+   
     <div class="mask-bg img-info">
       <p class="fl">高档型</p>
       <p class="fr"><span class="num">15</span>张</p>
     </div>
   </div>
   <ul class="hotel-info">
-    <li>
-      <div class="hotel-add fl text-ell">
+    <li class="sp">
+      <div class="hotel-add text-ell">
         广州岭南佳园连锁酒店（中山四路店）</div>
-      <p class="fr orange">￥138</p>
+      <p class="orange">￥138</p>
     </li>
   </ul>
   <div class="rooms-list-box">
@@ -179,6 +190,17 @@
 </div>
 <!--end-->
 <script type="text/javascript">
+
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 2500,
+         autoplayDisableOnInteraction: false,
+          loop: true
+    });
+    
+
+
 $("#datepicker").datepicker({
             dateFormat: 'yy-mm-dd',
             dayNamesMin: ["日", "一", "二", "三", "四", "五", "六"],

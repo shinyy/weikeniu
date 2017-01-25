@@ -68,6 +68,14 @@ img{
     background: #fff;
     font: 16px/49px Microsoft YaHei,SimHei;
 }
+.hotel-info>.sp{
+    height: auto;
+    line-height: 30px;
+    
+}
+.hotel-info>.sp .orange{
+    line-height: 30px;
+}
 /*.hotel-info>li:before {
     position: absolute;
     top: 20px;
@@ -453,6 +461,7 @@ html .ui-button.ui-state-disabled:active{
     width: 100%;
     height: 40px;
     font: 16px/40px Microsoft YaHei,SimHei;
+    z-index: 100;
 }
 .mask-bg {
     background: rgba(0,0,0,0.2);

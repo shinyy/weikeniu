@@ -83,18 +83,19 @@
               <div class="yu-btn yu-tmar30">查看详情</div>
             </div>
             </a>
-          </li>      
+          </li>   
+       </ul> 
+      <div id="pullUp">
+        <span class="pullUpIcon"></span><span class="pullUpLabel">上拉加载更多...</span>
+     </div>
+      <div class="no-more-row">
+        <div class="border"></div>
+        <p>没有数据了</p>
+      </div> 
 
-
-
-     
-        </ul> 
-
- <div id="pullUp">
-    <span class="pullUpIcon"></span><span class="pullUpLabel">上拉加载更多...</span>
-   </div>
- 
   </div>
+    
+  
  </div>
  
 
@@ -166,6 +167,7 @@ function loaded() {
   scrollbarClass: 'myScrollbar', /* 重要样式 */
   useTransition: false, /* 此属性不知用意，本人从true改为false */
   topOffset: pullDownOffset,
+   // vScroll:false,
   onRefresh: function () {
    if (pullDownEl.className.match('loading')) {
     pullDownEl.className = '';
@@ -184,11 +186,12 @@ function loaded() {
     pullDownEl.className = '';
     pullDownEl.querySelector('.pullDownLabel').innerHTML = '下拉刷新...';
     this.minScrollY = -pullDownOffset;
-   } else if (this.y < (this.maxScrollY - 5) && !pullUpEl.className.match('flip')) {
+
+   } else if (this.y < (this.maxScrollY -5) && !pullUpEl.className.match('flip')) {
     pullUpEl.className = 'flip';
     pullUpEl.querySelector('.pullUpLabel').innerHTML = '松手开始更新...';
     this.maxScrollY = this.maxScrollY;
-   } else if (this.y > (this.maxScrollY + 5) && pullUpEl.className.match('flip')) {
+   } else if (this.y > (this.maxScrollY +5) && pullUpEl.className.match('flip')) {
     pullUpEl.className = '';
     pullUpEl.querySelector('.pullUpLabel').innerHTML = '上拉加载更多...';
     this.maxScrollY = pullUpOffset;
