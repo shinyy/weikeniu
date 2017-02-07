@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*房型列表*/
 
 .room-name{
@@ -144,18 +145,18 @@ i,b,em{
     right: 0;
     font-size: 14px;
 }
-.list2 .room-content-head .room-pic{
+/*.list2 .room-content-head .room-pic{
     width: 100px;
     height: 100px;
 }
 .list2 .room-content-head .room-pic img{
     height: 100px;
-}
+}*/
 .yu-bmar10{
     margin-bottom: 10px;
 }
 .list2 .room-name{
-    height: 32px;
+    /*height: 32px;*/
     font-weight: bold;
     color: #4b566a;
 }
@@ -233,4 +234,12 @@ i,b,em{
     margin: 0 auto;
     margin-top: -12px;
 }
+
+
+.yu-mark{
+    border:1px solid #f60;
+    padding: 0 2px;
+    border-radius: 3px;
+}
+
 /********list2end*********/

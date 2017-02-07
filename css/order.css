@@ -30,5 +30,11 @@
     background: #f60;
     color: #fff;
 }
-
+.hx-btn{
+    color: #fff;
+    font-size:12px;
+    background: #00a0e9;
+    padding: 0 5px;
+    border-radius:3px;
+}
 

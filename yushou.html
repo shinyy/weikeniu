@@ -1,4 +1,4 @@
-﻿
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -15,9 +15,10 @@
 <!--IOS设备-->
 <meta http-equiv="Access-Control-Allow-Origin" content="*">
 <title>标题</title>
+<link type="text/css" rel="stylesheet" href="css/swiper-3.4.1.min.css"/>
+
 <link type="text/css" rel="stylesheet" href="css/jquery-ui.css"/>
 <link type="text/css" rel="stylesheet" href="css/sale-date.css"/>
-<link type="text/css" rel="stylesheet" href="css/swiper-3.4.1.min.css"/>
 
 
 
@@ -38,7 +39,8 @@
         <div class="swiper-slide"><img src="images/114.png" /></div>
 
     </div>
-   
+   <div class="swiper-button-next"></div>
+   <div class="swiper-button-prev"></div>
     <div class="mask-bg img-info">
       <p class="fl">高档型</p>
       <p class="fr"><span class="num">15</span>张</p>
@@ -53,7 +55,7 @@
   </ul>
   <div class="rooms-list-box">
     <ul class="rooms-date-change">
-      <li>
+      <li class="yu-xz">
           选择套餐内容   
       </li>
     </ul>
@@ -196,7 +198,9 @@
         paginationClickable: true,
         autoplay: 2500,
          autoplayDisableOnInteraction: false,
-          loop: true
+          loop: true,
+          nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
     });
     
 

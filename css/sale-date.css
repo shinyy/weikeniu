@@ -1,3 +1,4 @@
+@charset "utf-8";
 body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
 	margin: 0;
 	padding: 0;
@@ -362,7 +363,7 @@ img{
     bottom: 0;
     z-index: 999;
 }
-/*分离jqueryui样式*/
+/*וˆ†ח¦»jqueryuiז ·ו¼*/
 .ui-datepicker {
     /*width: 40em;*/
     width: 100%;
@@ -479,7 +480,7 @@ html .ui-button.ui-state-disabled:active{
 }
 
 
-/****团购*****/
+/****ו›¢ט´­*****/
 .yu-tmar10{
     margin-top: 10px;
 }
@@ -566,7 +567,7 @@ html .ui-button.ui-state-disabled:active{
     height: 45px;
 }
 .order-btn.over:before{
-    content: "订完";
+    content: "ט®¢ו®";
     line-height: 45px;
 }
 .yu-line60{
@@ -639,4 +640,32 @@ html .ui-button.ui-state-disabled:active{
     border-radius: 5px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.yu-xz:after {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    content: "选择";
+    font-size: 14px;
+    color: #1d79d9;
+}
+
+.swiper-button-next,.swiper-button-prev{
+    width: 40px;
+    height: 40px;
+    transform:rotate(45deg);
+    opacity: 0.5;
+}
+.swiper-button-next{
+    background: none;
+    border-top: 5px solid #ccc;
+    border-right: 5px solid #ccc;
+    right:15px;
+}
+.swiper-button-prev{
+    background: none;
+    border-left:5px solid #ccc;
+    border-bottom: 5px solid #ccc;
+    left: 15px;
 }
