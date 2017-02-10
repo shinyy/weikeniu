@@ -669,3 +669,30 @@ html .ui-button.ui-state-disabled:active{
     border-bottom: 5px solid #ccc;
     left: 15px;
 }
+
+
+/***********/
+.err-icon {
+    font-size: 100px !important;
+    /* color: #ffbc4b; */
+    color: #00a0e9;
+    text-align: center;
+    top: -50px;
+    width: 100%;
+    left: 0;
+}
+.err-page>p {
+    font-family: Microsoft yahei,simhei;
+    line-height: 30px;
+}
+.exit-btn {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.yu-bgblue {
+    background: #00a0e9;
+}
