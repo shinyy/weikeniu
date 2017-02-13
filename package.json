@@ -1,0 +1,23 @@
+{
+  "name": "weikeniu",
+  "version": "1.0.0",
+  "description": "weikeniu html",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shinyy/weikeniu.git"
+  },
+  "author": "shinyy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shinyy/weikeniu/issues"
+  },
+  "homepage": "https://github.com/shinyy/weikeniu#readme"
+}
