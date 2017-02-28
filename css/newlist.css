@@ -1,0 +1,464 @@
+.order-btn{
+	background: #f60;
+}
+.order-btn span{
+	color: #f60;
+}
+.yu-blue {
+    color: #4392ea;
+}
+.hotel-name{
+	position: absolute;
+	top: 10%;
+	left: 10px;
+	color: #fff;
+	text-shadow:1px 1px 1px #000;
+	z-index: 100;
+	font-size: 14px;
+}
+.hotel-img-num{
+	color: #fff;
+	position: absolute;
+	top: 8%;
+	right:-10px;
+	height: 30px;
+	width: 60px;
+	font-size: 14px;
+	line-height: 30px;
+	border-radius: 30px;
+	background: rgba(0,0,0,0.5);
+	z-index: 100;
+	text-align: center;
+
+}
+.get-quan{
+	height: 30px;
+	padding:0 10px;
+	color: #fff;
+	display: block;
+	background: #f60;
+	line-height: 30px;
+	border-radius: 5px;
+}
+.yu-tpad5{
+	padding-top: 5px !important;
+}
+.yu-arr:before{
+	top: 40%;
+}
+.rooms-list-box{
+	margin-bottom: 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+.border1{
+	border-left:1px solid #ccc;
+	height: 32px;
+	display: inline-block;
+	position: relative;
+	top: 9px;
+	margin:  0 10px;
+}
+.room-content>li{
+	background: #fafafa;
+	border-top:1px solid #ccc;
+}
+.rooms-list.sp2{
+	margin-bottom: 10px;
+}
+.rooms-list.sp2>li{
+	padding: 0;
+}
+.yu-tbor1{
+	border-top: 1px solid #ccc;
+}
+.yu-greys{
+	color: #666;
+}
+.babel{
+	display: inline-block;
+	height: 20px;
+	color: #fff;
+	line-height: 20px;
+	padding: 0 5px;
+	border-radius: 3px;
+	margin-right: 5px;
+	font-size: 12px;
+}
+.babel.type1{
+	background: #02b9c4;
+}
+.babel.type2{
+	background: #f00;
+}
+.babel.type3{
+	background: #f90;
+}
+.room-content-head.noarr:before{
+	width: 0;
+	height: 0;
+}
+.room-content-head.tgth:before{
+	border-bottom: 0;
+	border-top: 1px solid #999;
+	top: 40%;
+}
+.room-content-head.tgth.cur:before{
+	    transform: rotate(45deg);
+}
+.tgth .price-wrap{
+	padding-top: 18px;
+}
+.yu-nobg{
+	background: none;
+}
+.watch-more{
+	display: block;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+.tuan-ico{
+	width: 20px;
+	height: 22px;
+	background: url(../images/tuan.png) no-repeat;
+	display: inline-block;
+	background-size: 100%;
+
+	position: relative;
+	top: 3px;
+}
+.iconfont{
+	font-size: 20px;
+	margin-right: 5%;
+}
+.yu-arr:before{
+	    border-right: 2px solid #999;
+    border-bottom: 2px solid #999;
+}
+.rooms-date-change li:before{
+	border-color: #999;
+}
+.room-content-head:before{
+	border-color:#999;
+	right: 10px;
+}
+/*底部导航*/
+.foot-nav{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: #fff; 		
+	z-index: 100;
+	    border-style: solid;
+    -moz-border-image: url(../images/border-image.png)2 2 stretch;
+    -o-border-image: url(../images/border-image.png)2 2 stretch;
+    -webkit-border-image: url(../images/border-image.png)2 2 stretch;
+    border-image: url(../images/border-image.png) 2 2 stretch;
+    border-width: 1px 0 0 0;		
+
+}
+.foot-nav>a{
+	-webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+    color: #000;
+        border-style: solid;
+    -moz-border-image: url(../images/border-image.png)2 2 stretch;
+    -o-border-image: url(../images/border-image.png)2 2 stretch;
+    -webkit-border-image: url(../images/border-image.png)2 2 stretch;
+    border-image: url(../images/border-image.png) 2 2 stretch;
+    border-width: 0 0 0 1px;
+}
+.foot-nav>.cur{
+	color:#1477e5;
+}
+.foot-nav>a>span{
+	display: block;
+	width: 48px;
+	height: 48px;
+	background: url(../images/navico.png) no-repeat;
+	margin: -10px auto;
+	transform:scale(0.4);
+}
+.foot-nav .type1{
+	background-position: 0 0;
+}
+.foot-nav .type2{
+	background-position: -48px 0;
+}
+.foot-nav .type3{
+	background-position: -96px 0;
+}
+.foot-nav .type4{
+	background-position: -144px 0;
+}
+.foot-nav .type5{
+	background-position: -192px 0;
+}
+.foot-nav .type6{
+	background-position: -240px 0;
+}
+.foot-nav .cur .type1{
+	background-position: 0 -48px;
+}
+.foot-nav .cur .type2{
+	background-position: -48px -48px;
+}
+.foot-nav .cur .type3{
+	background-position: -96px -48px;
+}
+.foot-nav .cur .type4{
+	background-position: -144px -48px;
+}
+.foot-nav .cur .type5{
+	background-position: -192px -48px;
+}
+.foot-nav .cur .type6{
+	background-position: -240px -48px;
+}
+.foot-nav>a:nth-child(1){
+	border: 0;
+}
+body{
+	padding-bottom: 50px;
+}
+
+
+/****************************/
+
+.yu-arr:before{
+ right:10px;
+}
+/*.hotel-info > li{
+	font-size: 14px;
+}*/
+
+
+/*loading*/
+.load3 .loader {
+  font-size: 10px;
+  margin: 5em auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: #ffffff;
+  background: -moz-linear-gradient(left, #4392ea 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #4392ea 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #4392ea 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #4392ea 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #4392ea 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+}
+.load3 .loader:before {
+  width: 50%;
+  height: 50%;
+  background: #4392ea;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.load3 .loader:after {
+  background: #fff;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+.get-card .part1{
+	width: 	300px;
+	height: 123px;
+	background: url(../images/hyk1.png) no-repeat;
+	margin: 0 auto;
+	background-size: 100%;
+}
+.get-card .part2{
+	width: 300px;
+	/*padding: 10px 0;*/
+	background: url(../images/hyk2.jpg) repeat-y 0 0;
+	margin: 0 auto;
+	background-size: 100%;
+
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+
+}
+.get-card .part3{
+	width: 324px;
+	height: 116px;
+	background: url(../images/hyk3.png) no-repeat;
+	margin: 0 auto;
+	background-size: 100%;
+	}
+.get-card h3{
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom:5px;
+}
+.get-card h4{
+	color: #ff0;
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;	
+	margin-bottom: 5px;
+}
+.get-card h5{
+	color: #ffffa3;
+	text-align: left;
+	text-indent: 1em;
+	background: #d84040;
+	font-size: 14px;
+	font-weight: normal;	
+	line-height: 30px;
+	width: 260px;
+	margin: 0 auto;
+}
+.get-card table{
+	font-size: 14px;
+	color: #fff;
+	width: 260px;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+.get-card table td{
+	height: 30px;
+	text-indent: 1em;
+}
+.get-card table tr:nth-child(2n){
+	background: #e65252;
+}
+.get-card .get-btn{
+	width: 222px;
+	height: 49px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: 48px;
+	left:-3px;
+}
+.get-card .part1{
+	position: relative;
+}
+.get-card .close{
+	width: 38px;
+	height: 38px;
+	display: block;
+	position: absolute;
+	top: 47px;
+	right:0;
+}
+.yu-linet{
+	text-decoration: line-through;
+}
+
+.get-btn2{
+	width: 100%;
+	height:50px;
+	background:#f60;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+}
+.select-box{
+	margin-bottom: 10px;
+}
+
+
+.big-pic{
+	
+}
+
+.big-pic .inner{
+	position: relative;
+	top: 100px;
+	width: 320px;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.big-pic h3{
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: normal;
+}
+.big-img-box{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+.big-img-box img{
+	width: 100%;
+	height: 100%;
+}
+.book-btn{
+	height: 51px;
+	width: 100px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	border-radius: 0;
+}
+.big-img-detail{
+	background: #f3f3f3;
+	color:#999;
+	font-size: 14px;
+	padding:20px;
+	border-bottom: 1px solid #ccc;
+
+}
+.big-img-detail td{
+	width: 120px;
+}
+.big-pic .close{
+	width: 30px;
+	height: 30px;
+	background: url(../images/xxxx_103.jpg) no-repeat;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}

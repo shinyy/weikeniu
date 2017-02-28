@@ -1,0 +1,543 @@
+﻿
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="keywords" content="关键词1,关键词2,关键词3" />
+<meta name="description" content="对网站的描述" />
+<meta name="format-detection" content="telephone=no">
+<!--自动将网页中的电话号码显示为拨号的超链接-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!--width宽度height高度，initial-scale初始的缩放比例，minimum-scale允许缩放到的最小比例，maximum-scale允许缩放到的最大比例，user-scalable是否可以手动缩放-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--IOS设备-->
+<meta name="apple-touch-fullscreen" content="yes">
+<!--IOS设备-->
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<title>填写订单</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<link type="text/css" rel="stylesheet" href="css/sale-date.css"/>
+<link type="text/css" rel="stylesheet" href="css/newpay.css"/>
+<link type="text/css" rel="stylesheet" href="css/number-bar.css"/>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/number-bar.js"></script>
+
+</head>
+<body>
+  <section class="main">
+    <div class="yu-pd10 yu-bbor">
+      <div class="show  yu-arr type1">
+            <h1>豪华客房-大床</h1>
+            <div class="yu-grey">
+              <span class="yu-rmar30">入住：2月14日</span>
+              <span>入住：2月15日</span>
+              <span>共1晚</span>
+            </div>      
+          </div>      
+    </div>
+    <div class="hide yu-bbor">
+      <div class="yu-pd10">
+        <table class="details-tb">
+                <tr>
+                  <td>早餐：无早</td>
+                  <td>面积：15㎡</td>
+                </tr>
+                <tr>
+                  <td>宽带：免费</td>
+                  <td>楼层：7-11</td>
+                </tr> 
+                <tr>
+                  <td>床型：大床</td>
+                  <td>加床：不能加床</td>
+                </tr>                
+              </table>        
+      </div>
+    </div>
+    <div class="yu-pd10">
+      <ul>
+        <li class="yu-tb">
+          <p class="orderico type1 yu-tbc yu-nowrap"><span></span>立即确认</p>
+          <p class="yu-grey yu-h40 yu-tbc yu-lpad10 yu-font12"><span>预订此房型后可立即确认订单。</span></p>
+        </li>
+        <li class="yu-tb">
+          <p class="orderico type2 yu-tbc yu-nowrap"><span></span>限时取消</p>
+          <p class="yu-grey yu-h40 yu-tbc yu-lpad10 yu-font12"><span>2017.2.14 21:00前免费取消修改。</span></p>
+        </li>        
+        <li class="yu-tb">
+          <p class="orderico type3 yu-tbc yu-nowrap"><span></span>在线付款</p>
+          <p class="yu-grey yu-h40 yu-tbc yu-lpad10 yu-font12"><span>预定时完成支付，到酒店直接入住。</span></p>
+        </li>        
+        <li class="yu-tb">
+          <p class="orderico type4 yu-tbc yu-nowrap"><span></span>保留房间</p>
+          <p class="yu-grey yu-h40 yu-tbc yu-lpad10 yu-font12"><span>房间已为您整完保留。</span></p>
+        </li>        
+        <li class="yu-tb">
+          <p class="orderico type5 yu-tbc yu-nowrap"><span></span>到店付款</p>
+          <p class="yu-grey yu-h40 yu-tbc yu-lpad10 yu-font12"><span>需在到店后再前台付款办理入住。</span></p>
+        </li>        
+      </ul>
+    </div>
+  </section>
+  <section class="main">
+    
+      <dl class="yu-grid yu-h60 yu-tbor yu-lpad10 yu-line60 yu-arr type2">
+        <dt class="yu-greys yu-rmar30">保留到</dt>
+        <dd class="yu-overflow lasttimeselect">18:00</dd>
+      </dl>
+      <dl class="yu-grid yu-h60 yu-tbor yu-lpad10 yu-line60">
+              <dt class="yu-greys yu-rmar30">房间数</dt>
+              <dd class="yu-overflow">
+                <div class="num-input">
+                  <span class="jian"></span>
+                  <input type="text" value="1" readonly/>
+                  <span class="jia cur"></span>
+                </div>
+              </dd>
+            </dl>      
+  </section>
+
+<section class="main">
+    
+      <dl class="yu-grid yu-h60 yu-tbor yu-lpad10 yu-line60">
+        <dt class="yu-greys yu-rmar30">入住人</dt>
+        <dd class="yu-overflow room-input">
+          <input type="text" placeholder="房间1每间房只需填一位" class="input-type1 sp">
+          <!-- <input type="text" placeholder="房间1每间房只需填一位" class="input-type1 sp"> -->
+        </dd>
+      </dl>  
+
+<dl class="yu-grid yu-h60 yu-tbor yu-lpad10 yu-line60">
+        <dt class="yu-greys yu-rmar30">手机号</dt>
+        <dd class="yu-overflow ">
+          <input type="text" readonly placeholder="联系人手机号" class="phonenumber input-type1 sp" />
+        </dd>
+      </dl>
+
+      <dl class="yu-grid yu-h60 yu-tbor yu-lpad10 yu-line60 yu-arr type2 yhq-select">
+        <dt class="yu-greys yu-rmar30">红包</dt>
+        <dd class="yu-overflow yu-tb yu-h60">
+          <div class="yu-tbcell">
+              <p class="orange yhq-type">￥10</p>
+              <p class="text-mark">已从房费金额中扣减</p>            
+          </div>              
+        </dd>
+      </dl>
+      <dl class="yu-grid yu-h60 yu-tbor yu-lpad10 yu-line60">
+        <dt class="yu-greys yu-rmar30">总房价</dt>
+        <dd class="yu-overflow yu-tb yu-h60">
+          <div class="yu-tbcell">
+              <p class="orange">￥257</p>
+              <p class="text-mark">已优惠13元，可获<span class="yu-blue">267</span>积分</p>            
+          </div>              
+        </dd>
+      </dl>
+    </section>
+
+    <section class="main">
+        <dl class="yu-grid yu-h60 yu-tbor yu-lpad10 yu-line60">
+          <dt class="yu-greys yu-rmar30">押金</dt>
+          <dd class="yu-overflow">
+            <div class="radio cur"></div>
+          </dd>
+      </dl>
+<dl class="yu-grid yu-h60 yu-tbor yu-lpad10 yu-line60">
+        <dt class="yu-greys yu-rmar30">酒店押金</dt>
+        <dd class="yu-overflow yu-tb yu-h60">
+          <div class="yu-tbcell">
+              <p class="orange">￥100</p>
+              <p class="text-mark">提前交酒店押金，离店后原路返还</p>            
+          </div>              
+        </dd>
+      </dl>      
+    </section>
+
+
+    <section class="main">
+        <dl class="yu-grid yu-h60 yu-tbor yu-lpad10 yu-line60">
+                  <dt class="yu-greys yu-rmar30">发票</dt>
+                  <dd class="yu-overflow">
+                    <div class="radio cur"></div>
+                  </dd>
+              </dl>  
+        <dl class="yu-grid yu-h60 yu-tbor yu-lpad10 yu-line60">
+                <dt class="yu-greys yu-rmar30">发票抬头</dt>
+                <dd class="yu-overflow">
+                  <input type="text" placeholder="请输入个人/单位名称" class="input-type1 sp" />
+              </dl>  
+     </section>
+    <section class="main">
+        <dl class="yu-grid yu-h60 yu-tbor yu-lpad10 yu-line60 yu-arr type2">
+                  <dt class="yu-greys yu-rmar30">特殊要求</dt>
+                  <dd class="yu-overflow tsyq-type">
+                    尽量安排无烟房
+                  </dd>
+              </dl>        
+    </section>
+    <section class="fix-bottom yu-h60 yu-grid yu-tbor">
+<div class="pay-detail">
+        <div class="yu-pad20">
+          <ul class="pay-dateil-list">
+                    <li class="yu-grid">
+                      <p>在线支付</p>
+                      <p class="yu-overflow">&nbsp;</p>
+                      <p class="orange">￥367</p>
+                    </li>
+                    <li class="yu-grid">
+                      <p class="yu-greys">房费（1间X1晚）</p>
+                      <p class="yu-overflow yu-nowrap yu-greys">----------------------------------------------------------------------------------------</p>
+                      <p class="yu-greys yu-linet">￥280</p>
+                    </li>  
+                    <li class="yu-grid">
+                      <p class="yu-greys">高级会员折扣价</p>
+                      <p class="yu-overflow yu-nowrap yu-greys">----------------------------------------------------------------------------------------</p>
+                      <p class="orange">280*0.99=￥277</p>
+                    </li>                     
+                    <li class="yu-grid">
+                      <p class="yu-greys">使用优惠券抵扣</p>
+                      <p class="yu-overflow yu-nowrap yu-greys">----------------------------------------------------------------------------------------</p>
+                      <p class="yu-greys">-￥10</p>
+                    </li>  
+                    <li class="yu-grid">
+                      <p class="yu-greys">提前交酒店押金</p>
+                      <p class="yu-overflow yu-nowrap yu-greys">----------------------------------------------------------------------------------------</p>
+                      <p class="yu-greys">￥100</p>
+                    </li>                                                
+                  </ul>          
+        </div>
+      </div>      
+      <div class="yu-overflow details-btn2">
+        <div class="yu-grid yu-lpad10">
+                    <div class="yu-overflow yu-tpad10">
+                       <p class="oranges yu-font20">到店支付￥367</p>
+                       <p class="text-mark">为您优惠13元</p>          
+                    </div>
+                    <a class="yu-grey yu-line60 yu-rmar10 yu-arr type3 yu-rpad15 details-btn">
+                      明细
+                    </a>            
+        </div>
+       </div>
+      <input type="button" value="提交" />
+
+      
+    </section>
+    <!-- 最晚到店 -->
+    <section class="mask lasttime">
+      <div class="mask-inner">
+          <div class="row yu-line60 yu-h60 yu-font20">最晚到店时间</div>
+          <div class="row yu-line50 yu-font14 orange yu-bggrey">该酒店14：00办理入住，早到可能需要等待。</div>
+          <div class="time-box select-box">
+              <div class="row sp yu-grid yu-line60 yu-font60 cur">
+                  <p class="t-ico"><span></span></p>
+                  <p class="yu-overflow yu-bbor yu-font20 yu-lpad10 yu-textl">17:00</p>
+               </div> 
+                <div class="row sp yu-grid yu-line60 yu-font60">
+                  <p class="t-ico"><span></span></p>
+                  <p class="yu-overflow yu-bbor yu-font20 yu-lpad10 yu-textl">18:00</p>
+               </div>                  
+                <div class="row sp yu-grid yu-line60 yu-font60 yu-textl">
+                  <p class="t-ico"><span></span></p>
+                  <p class="yu-overflow yu-bbor yu-font20 yu-lpad10 yu-textl">19:00</p>
+               </div>    
+              <div class="row sp yu-grid yu-line60 yu-font60">
+                  <p class="t-ico"><span></span></p>
+                  <p class="yu-overflow yu-bbor yu-font20 yu-lpad10 yu-textl">20:00</p>
+               </div> 
+                <div class="row sp yu-grid yu-line60 yu-font60">
+                  <p class="t-ico"><span></span></p>
+                  <p class="yu-overflow yu-bbor yu-font20 yu-lpad10 yu-textl">21:00</p>
+               </div>                  
+                <div class="row sp yu-grid yu-line60 yu-font60 yu-textl">
+                  <p class="t-ico"><span></span></p>
+                  <p class="yu-overflow yu-bbor yu-font20 yu-lpad10 yu-textl">22:00</p>
+               </div>                                          
+          </div>
+      </div>
+    </section>
+    <!-- 优惠券 -->
+    <section class="mask yhq" style="display:block">
+         <!-- <div class="mask-inner">
+            <div class="row yu-line60 yu-h60 yu-font20 yu-grid">
+                        <p class="yu-grey yu-w70 cancel">取消</p>
+                        <p class="yu-overflow">选择优惠券</p>
+                        <p class="yu-blue yu-w70 yhq-over">完成</p>
+                     </div> 
+             <div class="yhq-box select-box">
+              <div class="row sp yu-grid  cur">
+                  <p class="t-ico"><span></span></p>
+                  <div class="yu-overflow yu-bbor yu-lpad10 yu-textl yu-grid txt">
+                    <div class="yu-line60">￥<strong class="yu-font30">10</strong></div>
+                    <div class="yu-overflow yu-lpad10 yu-tpad15 yu-font12">
+                      <p>0元起用</p>
+                      <p>有效期2017.01.01-2017.01.10</p>
+                    </div>
+                  </div>
+               </div>      
+              <div class="row sp yu-grid">
+                  <p class="t-ico"><span></span></p>
+                  <div class="yu-overflow yu-bbor yu-lpad10 yu-textl yu-grid yu-orange txt">
+                    <div class="yu-line60">￥<strong class="yu-font30">20</strong></div>
+                    <div class="yu-overflow yu-lpad10 yu-tpad15 yu-font12">
+                      <p>0元起用</p>
+                      <p>有效期2017.01.01-2017.01.10</p>
+                    </div>
+                  </div>
+               </div>                     
+              <div class="row sp yu-grid">
+                  <p class="t-ico"><span></span></p>
+                  <div class="yu-overflow yu-bbor yu-lpad10 yu-textl yu-grid yu-orange txt">
+                    <div class="yu-line60">￥<strong class="yu-font30">30</strong></div>
+                    <div class="yu-overflow yu-lpad10 yu-tpad15 yu-font12">
+                      <p>0元起用</p>
+                      <p>有效期2017.01.01-2017.01.10</p>
+                    </div>
+                  </div>
+               </div>                                           
+          </div>          
+         </div> -->
+
+         <div class="mask-inner">
+            <div class="row yu-line60 yu-h60 yu-font20 yu-grid yu-bmar10">
+                        <p class="yu-grey yu-w70 cancel">取消</p>
+                        <p class="yu-overflow">选择红包</p>
+                        <p class="yu-blue yu-w70 yhq-over">完成</p>
+                     </div>   
+
+            <div class="yhq-box select-box">
+              <div class="row">
+                <div class="hongbao type1 yu-grid">
+                    <div class="yu-overflow yu-textl">
+                      <p class="yu-bmar10"><i class="yu-font14">￥</i><i class="yu-font30">10</i></p>
+                      <p class="yu-font14">订房红包</p>
+                      <p class="yu-font14">有效期2017.01.01-2017.01.15</p>
+                    </div>
+                    <p class="hongbao-state"><span class="type1">未选用</span><span  class="type2">已选用</span></p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="hongbao type1 yu-grid">
+                    <div class="yu-overflow yu-textl">
+                      <p class="yu-bmar10"><i class="yu-font14">￥</i><i class="yu-font30">10</i></p>
+                      <p class="yu-font14">订房红包</p>
+                      <p class="yu-font14">有效期2017.01.01-2017.01.15</p>
+                    </div>
+                    <p class="hongbao-state"><span class="type1">未选用</span><span  class="type2">已选用</span></p>
+                </div>
+              </div>                
+           
+            <div class="row">
+                <div class="hongbao type1 yu-grid">
+                    <div class="yu-overflow yu-textl">
+                      <p class="yu-bmar10"><i class="yu-font14">￥</i><i class="yu-font30">10</i></p>
+                      <p class="yu-font14">订房红包</p>
+                      <p class="yu-font14">有效期2017.01.01-2017.01.15</p>
+                    </div>
+                    <p class="hongbao-state"><span class="type1">未选用</span><span  class="type2">已选用</span></p>
+                </div>
+              </div>              
+
+ <div class="row">
+                <div class="hongbao type1 yu-grid">
+                    <div class="yu-overflow yu-textl">
+                      <p class="yu-bmar10"><i class="yu-font14">￥</i><i class="yu-font30">10</i></p>
+                      <p class="yu-font14">订房红包</p>
+                      <p class="yu-font14">有效期2017.01.01-2017.01.15</p>
+                    </div>
+                    <p class="hongbao-state"><span class="type1">未选用</span><span  class="type2">已选用</span></p>
+                </div>
+              </div>                     
+
+
+            </div>          
+         </div>
+    </section>
+<!-- 特殊要求 -->
+    <section class="mask tsyq">
+         <div class="mask-inner">
+            <div class="row yu-line60 yu-h60 yu-font20 yu-grid">
+                        <p class="yu-grey yu-w70 cancel">取消</p>
+                        <p class="yu-overflow">特殊要求</p>
+                        <p class="yu-blue yu-w70 tsyq-over">完成</p>
+                     </div>
+            <div class="row yu-line50 yu-font14 orange yu-bggrey">酒店针对您的偏好尽量安排，但不能保证，请您谅解。</div>
+            <div class="tsyq-box select-box">
+                <div class="row sp yu-grid yu-line60 yu-font60 cur">
+                    <p class="t-ico"><span></span></p>
+                    <p class="yu-overflow yu-bbor yu-font20 yu-lpad10 yu-textl">无</p>
+                 </div>               
+                <div class="row sp yu-grid yu-line60 yu-font60">
+                    <p class="t-ico"><span></span></p>
+                    <p class="yu-overflow yu-bbor yu-font20 yu-lpad10 yu-textl">尽量安排无烟房</p>
+                 </div> 
+                  <div class="row sp yu-grid yu-line60 yu-font60">
+                    <p class="t-ico"><span></span></p>
+                    <p class="yu-overflow yu-bbor yu-font20 yu-lpad10 yu-textl">尽量安排吸烟房</p>
+                 </div>                  
+                  <div class="row sp yu-grid yu-line60 yu-font60 yu-textl">
+                    <p class="t-ico"><span></span></p>
+                    <p class="yu-overflow yu-bbor yu-font20 yu-lpad10 yu-textl">尽量安排高层方</p>
+                 </div>                             
+            </div>             
+                     
+         </div>
+    </section>   
+    <!-- 提示框  -->
+    <section class="mask tips">
+      <div class="tips-inner ">
+        <p class="part1 yu-bbor yu-greys">订单尚未提交，返回将放弃填写</p>
+        <div class="yu-grid yu-line50 yu-h50">
+          <p class="yu-overflow yu-greys go-back">返回</p>
+          <p class="yu-overflow go-on">继续填写</p>
+        </div>
+      </div>
+    </section>
+    <!-- 数字输入 -->
+    <section class="number-bar">
+      <div class="scrn">
+        <p class="sjh">手机号</p>
+        <p class="scrn-txt"></p>
+      </div>
+      <div class="num-key">
+       
+      <div class="num-key-row">
+          <p data="1" class="num-k">1</p>
+          <p data="2" class="num-k">2</p>
+          <p data="3" class="num-k">3</p>
+        </div>        
+      <div class="num-key-row">
+          <p data="4" class="num-k">4</p>
+          <p data="5" class="num-k">5</p>
+          <p data="6" class="num-k">6</p>
+        </div> 
+      <div class="num-key-row">
+          <p data="7" class="num-k">7</p>
+          <p data="8" class="num-k">8</p>
+          <p data="9" class="num-k">9</p>
+        </div>
+ <div class="num-key-row">
+          <p class="submit">确认</p>
+          <p data="0" class="num-k">0</p>
+          <p class="del"><span></span></p>
+        </div>                           
+      </div>
+      <div class="slide-bar"></div>
+    </section>
+
+    <script type="text/javascript">
+      $(function(){
+          $(".show").on("click",function(){
+                  $(this).toggleClass("cur").parent().siblings(".hide").slideToggle();
+                }) 
+          //mask      
+          $(".mask").click(function(){
+            $(this).fadeOut();
+          })
+          $(".mask .mask-inner").click(function(e){
+             e.stopPropagation();
+          })
+          //最晚到店
+          $(".lasttimeselect").click(function(){
+            $(".lasttime").fadeIn(500);
+          })
+          //优惠券
+          $(".yhq-select").click(function(){
+            $(".yhq").fadeIn(500);
+          })
+          $(".cancel").click(function(){
+            $(".mask").fadeOut();
+          })
+          $(".yhq-over").click(function(){
+            $(".yhq").fadeOut();
+            $(".yhq-type").text("￥"+yhqNum+"0");
+          })
+          // 特殊要求
+          $(".tsyq-type").click(function(){
+            $(".tsyq").fadeIn(500);
+          })
+          $(".tsyq-over").click(function(){
+            $(".tsyq").fadeOut();
+            $(".tsyq-type").text(tsyqTxt);
+          })
+          //房间数
+          function allRoom(roomNum){
+              $(".room-input").children(".input-type1").remove();
+              for(var i=0;i<roomNum;i++){
+                $(".room-input").append($('<input type="text" placeholder="房间'+(i+1)+'每间房只需填一位" class="input-type1 yu-bbor">'));
+              }
+                $(".room-input").children(".input-type1").last().removeClass("yu-bbor").addClass("sp");
+            };
+          var roomNum;
+          $(".num-input").children("span").on("click",function(){
+
+              roomNum=parseInt($(".num-input").children("input").val());
+              if($(this).hasClass("jia")){
+                roomNum++;
+                $(".num-input").children("input").val(roomNum);
+                $(".jian").addClass("cur");
+                allRoom(roomNum);
+              }else if($(this).hasClass("jian")){
+                if(roomNum>1){
+
+                  roomNum--;
+                  $(".num-input").children("input").val(roomNum);      
+                  allRoom(roomNum)
+
+                }else{
+                  $(".jian").removeClass("cur");
+
+                }
+              };
+          })
+          //radio
+          $(".radio").on("click",function(){
+            if($(this).hasClass("cur")){
+              $(this).parents("dl").siblings("dl").fadeOut();
+              $(this).removeClass("cur");
+            }else{
+                $(this).parents("dl").siblings("dl").fadeIn();
+                $(this).addClass("cur");
+            }
+          })
+          //mask操作
+          var lasttime,
+              yhqNum,
+              tsyqTxt;
+          $(".select-box .row").on("click",function(){
+            $(this).addClass("cur").siblings(".row").removeClass("cur");
+            if($(this).parent(".select-box").hasClass("time-box")){//最晚时间
+                lasttime=$(this).children("p").eq(1).text();
+                $(".lasttimeselect").text(lasttime);   
+                 $(this).parents(".mask").fadeOut();                
+            }else if($(this).parent(".select-box").hasClass("yhq-box")){//优惠券
+                $(this).find(".txt").removeClass("yu-orange");
+                $(this).siblings().find(".txt").addClass("yu-orange");
+                yhqNum=$(this).index()+1;
+                return yhqNum;
+            }else if($(this).parent(".select-box").hasClass("tsyq-box")){//特殊要求      
+               tsyqTxt=$(this).children("p").eq(1).text();
+               return tsyqTxt;
+            }
+          })
+          //明细
+          $(".details-btn2").click(function(){
+            $(".pay-detail").toggle();
+            $(this).toggleClass("cur");
+          })
+          //电话号码
+          $(".phonenumber").click(function(){
+            $(".number-bar").show();
+          })
+          //弹框提醒
+          $(".tips-inner").click(function(e){
+             e.stopPropagation();
+          })
+          $(".tips-inner .go-on").click(function(){
+            $(".tips").fadeOut();
+          })
+
+          
+      })
+    </script>
+</body>
+</html>

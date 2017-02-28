@@ -1,0 +1,646 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="keywords" content="关键词1,关键词2,关键词3" />
+<meta name="description" content="对网站的描述" />
+<meta name="format-detection" content="telephone=no">
+<!--自动将网页中的电话号码显示为拨号的超链接-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!--width宽度height高度，initial-scale初始的缩放比例，minimum-scale允许缩放到的最小比例，maximum-scale允许缩放到的最大比例，user-scalable是否可以手动缩放-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--IOS设备-->
+<meta name="apple-touch-fullscreen" content="yes">
+<!--IOS设备-->
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<title>团购列表</title>
+<link type="text/css" rel="stylesheet" href="css/swiper-3.4.1.min.css"/>
+
+<link type="text/css" rel="stylesheet" href="css/jquery-ui.css"/>
+<link type="text/css" rel="stylesheet" href="css/sale-date.css"/>
+<link type="text/css" rel="stylesheet" href="css/iconfont/iconfont.css"/>
+<link type="text/css" rel="stylesheet" href="css/list.css"/>
+<link type="text/css" rel="stylesheet" href="css/newlist.css"/>
+<link type="text/css" rel="stylesheet" href="css/newpay.css"/>
+
+
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.1.jquery.min.js"></script>
+
+<script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+<div class="base-page">
+<div id="main">
+  <div class="hotel-img-box swiper-container swiper-container-horizontal">
+    <p class="hotel-name">背景橙子时尚快捷公寓首都机场店</p>
+    <p class="hotel-img-num"><span class="activeIndex"></span>/15</p>
+    <div class="swiper-wrapper">
+      
+        <div class="swiper-slide"><img src="images/114.png" /></div>
+        <div class="swiper-slide"><img src="images/114.png" /></div>
+        <div class="swiper-slide"><img src="images/114.png" /></div>
+
+    </div>
+    <div class="mask-bg img-info yu-grid">
+      <p class="yu-overflow yu-font14">您有一张优惠券未领取！【用券立减】</p>
+      <p class="yu-tpad5"><a class="get-quan yu-font14">马上领取</a></p>
+    </div>
+  </div>
+  <ul class="hotel-info">
+    <li class="yu-arr ">
+      <a href="javascript:;" class="yu-grid">
+        <div class="hotel-add text-ell yu-grey yu-overflow">
+                广州岭南佳园连锁酒店（中山四路店）
+              </div>
+              <p class="yu-blue yu-font14">地图</p>          
+
+      </a>
+      
+    </li>
+  <li class="yu-arr">
+    <a href="javascript:;" class="yu-grid">
+<div class="hotel-add text-ell yu-grey yu-overflow">
+       电话：010-1234567
+      </div>
+      <p class="yu-blue yu-font14">拨打</p>      
+
+    </a>
+      
+    </li>   
+<li class="yu-arr">
+  <a href="javascript:;" class="yu-grid">
+<div class="hotel-add text-ell yu-blue yu-overflow">
+        <i class="iconfont">&#xe603;</i>
+        <i class="iconfont">&#xe601;</i>
+        <i class="iconfont">&#xe60a;</i>
+        <i class="iconfont">&#xe618;</i>
+        <i class="iconfont">&#xe61a;</i>
+      </div>
+      <p class="yu-blue yu-font14">详情</p>      
+
+  </a>
+      
+    </li>       
+  </ul>
+  
+  <div class="rooms-list-box">
+    <ul class="rooms-date-change">
+      <li>
+          
+          <span class="yu-font20 start-date yu-greys">01-18</span>
+          <span class="yu-font12 yu-grey ">今天入住</span>
+          <span class="border1"></span>
+          <span class="yu-font20 end-date yu-greys">01-19</span>
+          <span class="yu-font12 yu-grey">明天离店</span>
+          <span class="yu-font12 fr yu-rmar20 yu-blue">共1晚</span>
+          
+  
+      </li>
+    </ul>
+</div>
+
+
+<ul class="rooms-list sp2">
+  <li>
+      <div class="room-content-head yu-grid">
+          <div class="yu-overflow">
+            <div class="room-name text-ell yu-line30"><i class="iconfont yu-blue yu-font20">&#xe609;</i>钟点房</div>
+          </div>
+          <div class="price-wrap yu-orange">
+            <span class="yu-font12">￥</span>
+             <span class="yu-font20 ">140</span>
+              <span class="yu-font12">起</span>
+          </div>
+        </div>  
+<ul class="room-content">
+            <li class="yu-grid">
+<div class="yu-overflow yu-greys">
+              <div class="room-name">
+                标准单人间、商务标准间
+              </div>
+              <div>(1小时钟点房)</div>
+            </div>
+            <div class="room-price-wrap">
+              <p class="yu-orange">
+                <i class="yu-font12">￥</i>
+                <i class="yu-font20">69</i>
+              </p>
+              <p class="yu-font12 yu-grey  yu-linet">￥89</p>
+              <p class="yu-font12 yu-grey">会员减￥20</p>
+
+            </div>
+            <div class="order-btn">
+              <span>在线付</span>
+            </div>              
+            </li> 
+          </ul>         
+  </li>
+</ul>
+
+
+
+<ul class="rooms-list sp2 yu-tbor1">
+      <!-- 加载动画 -->
+      <li>
+        <div class="load-container load3">
+          <div class="loader">Loading...</div>
+        </div>
+      </li>
+      <!--  -->
+      <li>
+        <div class="room-content-head yu-grid">
+          <div class="room-pic">
+            <img src="images/room_03.png" />
+            <span class="room-pic-num yu-font12">8张</span>
+          </div>
+          <div class="yu-overflow">
+            <div class="room-name text-ell">标准双床房</div>
+            <div class="text-ell"><span class="yu-font12 yu-greys">15㎡ 双床1.2m 无窗 有wifi</span></div>
+          </div>
+          <div class="price-wrap yu-orange">
+            <span class="yu-font12">￥</span>
+             <span class="yu-font20">140</span>
+              <span class="yu-font12">起</span>
+          </div>
+        </div>
+        <ul class="room-content">
+            <li class="yu-grid">
+<div class="yu-overflow">
+              <div class="room-name text-ell yu-greys">【大床】无早</div>
+              </div>
+            <div class="room-price-wrap">
+              <p class="yu-grey yu-line60">
+                <i class="yu-font12">￥</i>
+                <i class="yu-font20">99</i>
+              </p>
+
+            </div>
+            <div class="order-btn over">
+            </div>              
+            </li>
+ <li class="yu-grid">
+<div class="yu-overflow">
+              <div class="room-name text-ell yu-greys">【大床】无早
+              </div>
+            </div>
+            <div class="room-price-wrap">
+              <p class="yu-orange">
+                <i class="yu-font12">￥</i>
+                <i class="yu-font20">99</i>
+              </p>
+              <p class="yu-font12 yu-grey yu-linet">￥109</p>
+              <p class="yu-font12 yu-grey">用券立减￥30</p>
+
+            </div>
+            <div class="order-btn">
+              <span>在线付</span>
+            </div>              
+            </li>            
+        </ul>
+      </li>
+      <li>
+
+        <div class="room-content-head yu-grid ">
+ <div class="room-pic">
+            <img src="images/room_03.png" />
+            <span class="room-pic-num yu-font12">8张</span>
+          </div>          
+          <div class="yu-overflow">
+            <div class="room-name text-ell">标准双床房标准双床房标准双床房标准双床房标准双床房标准双床房标准双床房标准双床房标准双床房标准双床房标准双床房标准双床房标准双床房</div>
+            <div class="text-ell"><span class="yu-font12 yu-grey">15㎡ 双床1.2m 无窗 有wifi</span></div>
+          </div>
+          <div class="price-wrap yu-orange">
+            <span class="yu-font12">￥</span>
+             <span class="yu-font20">140</span>
+              <span class="yu-font12">起</span>
+          </div>
+        </div>
+        <ul class="room-content">
+            <li class="yu-grid">
+
+              <div class="yu-overflow">
+              <div class="room-name text-ell yu-greys">【大床】无早
+              </div>
+            </div>
+            <div class="room-price-wrap">
+              <p class="yu-orange">
+                <i class="yu-font12">￥</i>
+                <i class="yu-font20">99</i>
+              </p>
+              <p class="yu-font12 yu-grey yu-linet">￥109</p>
+              <p class="yu-font12 yu-grey">用券减￥30</p>
+
+            </div>
+            <div class="order-btn">
+              <span>预付</span>
+            </div>              
+            </li>
+ <li class="yu-grid">
+<div class="yu-overflow">
+              <div class="room-name text-ell yu-greys">【大床】无早
+              </div>
+            </div>
+            <div class="room-price-wrap">
+              <p class="yu-orange">
+                <i class="yu-font12">￥</i>
+                <i class="yu-font20">99</i>
+              </p>
+              <p class="yu-font12 yu-grey yu-linet">￥109</p>
+              <p class="yu-font12 yu-grey">用券减￥30</p>
+
+            </div>
+            <div class="order-btn">
+              <span>担保</span>
+            </div>              
+            </li>            
+        </ul>
+      </li>      
+    </ul> 
+    
+    
+    <ul class="rooms-list sp">
+        <li>
+            <div class="room-content-head yu-grid noarr">
+              <div class="yu-overflow">
+                <div class="room-name text-ell yu-line30">
+                  <span class="tuan-ico"></span>
+                  团购预售特惠</div>
+              </div>
+            </div>
+        </li>
+    </ul>
+    
+
+    <ul class="rooms-list sp2 y">
+      <li>
+        <div class="room-content-head yu-grid tgth">
+          <div class="room-pic">
+            <img src="images/room_03.png">
+          </div>
+          <div class="yu-overflow">
+            <div class="room-name text-ell">情人节特优惠-精品特惠大床房</div>
+            <div class="text-ell">入住1晚</div>
+            <div><span class="babel type1">立即确认</span><span class="babel type2">预售</span></div>
+          </div>
+          <div class="price-wrap yu-orange">
+            <span class="yu-font12">￥</span>
+             <span class="yu-font20">140</span>
+          </div>
+        </div>
+        
+      </li>
+ <li>
+        <div class="room-content-head yu-grid tgth">
+          <div class="room-pic">
+            <img src="images/room_03.png">
+          </div>
+          <div class="yu-overflow">
+            <div class="room-name text-ell">情人节特优惠-精品特惠大床房</div>
+            <div class="text-ell">入住1晚</div>
+            <div><span class="babel type1">立即确认</span><span class="babel type2">预售</span><span class="babel type3">团购</span></div>
+          </div>
+          <div class="price-wrap yu-orange">
+            <span class="yu-font12">￥</span>
+             <span class="yu-font20">140</span>
+          </div>
+        </div>
+        
+      </li>      
+    </ul>
+    <a href="javascript:;" class="yu-blue watch-more">查看更多>></a>
+</div>
+</div>
+<!--end--> 
+<!--日期弹出页-->
+<div class="select-page">
+  <div class="back"></div>
+  <div class="top">
+      立即购买
+    </div>  
+<ul class="rooms-list">
+      <li>
+        <div class="room-img"> <img src="images/room_03.png" /> </div>
+        <div class="room-details">
+          <h4>标准间</h4>
+          <div class="room-details-role">
+            <div class="fl room-info"><span>单早</span><span>免费无线</span></div>
+            <div class="fr room-price"><b class="num"><small>￥</small>308</b>起</div>
+          </div>
+          <div class="room-details-role">
+            <div class="fl room-info">双床1.2米</div>
+          </div>
+        </div>
+      </li>  
+    </ul>
+  <div class="tc-box">
+    <h3>套餐类型</h3>
+    <ul>
+      <li class="cur">高级客房 周日到四</li>
+       <li>高级客房（大床） 周日到五</li>
+        <li>高级客房 周日到六</li>
+         <li>高级客房 周一到三</li>
+    </ul>
+  </div>
+ <div class="tc-box">
+    <h3>出游人群</h3>
+    <ul>
+      <li class="cur">成人</li>
+       <li>老人</li>
+        <li>儿童</li>
+    </ul>
+  </div>  
+<div class="tc-box">
+    <h3>购买数量</h3>
+    <div class="buy-num">
+      <span class="sy jian">-</span>
+      <input type="text" class="buy-num-input" value="1"/>
+      <span  class="sy jia">+</span>
+    </div>
+    <p class="Stock">库存<span>616</span>件</p>
+  </div>  
+  <ul class="rooms-date-change sp">
+      <li>
+          <span>使用日期：</span>
+          <span class="start-date"></span>        
+      </li>
+      
+     </ul>
+     <div class="buy-btn">立即购买</div>
+</div>
+<div class="date-page">
+    <div class="back"></div>
+    <div class="top">
+      选择日期
+    </div>
+    <div id="datepicker"></div>
+  
+</div>
+
+
+<div class="foot-nav yu-grid yu-font12">
+  <a href="javascript:;">
+    <span class="type1"></span>
+    <p>首页</p>
+  </a>
+ <a href="javascript:;" class="cur">
+    <span class="type2"></span>
+    <p>订房</p>
+  </a>  
+ <a href="javascript:;">
+    <span class="type3"></span>
+    <p>优惠</p>
+  </a>  
+ <a href="javascript:;">
+    <span class="type4"></span>
+    <p>活动</p>
+  </a>  
+ <a href="javascript:;">
+    <span class="type5"></span>
+    <p>会员</p>
+  </a>  
+<a href="javascript:;">
+    <span class="type6"></span>
+    <p>订单</p>
+  </a>    
+</div>
+<!--end-->
+<section class="mask hyk-mask">
+  <div class="get-card">
+    <div class="part1">
+      <span class="close"></span>
+    </div>
+    <div class="part2">
+      <h3>领取会员优惠券，更多特权多优惠!</h3>
+      <h3>10元优惠券【预订立减】</h3>
+      <div class="mem-right">
+        <h4>会员权益</h4>
+        <!-- <h5>会员卡优惠与积分说明</h5> -->
+        <table>
+          <tr>
+            <td>特权内容</td>
+            <td>订房优惠</td>
+            <td>积分加成</td>
+          </tr>
+          <tr>
+            <td>普通会员</td>
+            <td>9.9折</td>
+            <td>1.0倍</td>
+          </tr>          
+          <tr>
+            <td>高级会员</td>
+            <td>9.9折</td>
+            <td>1.0倍</td>
+          </tr>            
+          <tr>
+            <td>白金会员</td>
+            <td>9.9折</td>
+            <td>1.0倍</td>
+          </tr>            
+          <tr>
+            <td>黄金会员</td>
+            <td>9.9折</td>
+            <td>1.0倍</td>
+          </tr>            
+          <tr>
+            <td>钻石会员</td>
+            <td>9.9折</td>
+            <td>1.0倍</td>
+          </tr>            
+        </table>
+      </div>
+    </div>
+    <div class="part3">
+      <a href="javascript:;" class="get-btn"></a>
+    </div>
+  </div>
+</section>
+<!-- 领取红包 -->
+<div class="mask lqhb">
+  <div class="mask-inner">
+            <div class="row yu-line60 yu-h60 yu-font20 yu-grid yu-bmar10">
+                        <p class="yu-overflow">酒店红包</p>
+                     </div>   
+
+            <div class="yhq-box select-box">
+              <div class="row">
+                <div class="hongbao type2 yu-grid">
+                    <div class="yu-overflow yu-textl">
+                      <p class="yu-bmar10"><i class="yu-font14">￥</i><i class="yu-font30">10</i></p>
+                      <p class="yu-font14">订房红包</p>
+                      <p class="yu-font14">有效期2017.01.01-2017.01.15</p>
+                    </div>
+                    <p class="hongbao-state"><span class="type1">立即领取</span><span  class="type2">已领取</span></p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="hongbao type2 yu-grid">
+                    <div class="yu-overflow yu-textl">
+                      <p class="yu-bmar10"><i class="yu-font14">￥</i><i class="yu-font30">10</i></p>
+                      <p class="yu-font14">订房红包</p>
+                      <p class="yu-font14">有效期2017.01.01-2017.01.15</p>
+                    </div>
+                    <p class="hongbao-state"><span class="type1">立即领取</span><span  class="type2">已领取</span></p>
+                </div>
+              </div>                
+           
+            <div class="row">
+                <div class="hongbao type2 yu-grid">
+                    <div class="yu-overflow yu-textl">
+                      <p class="yu-bmar10"><i class="yu-font14">￥</i><i class="yu-font30">10</i></p>
+                      <p class="yu-font14">订房红包</p>
+                      <p class="yu-font14">有效期2017.01.01-2017.01.15</p>
+                    </div>
+                    <p class="hongbao-state"><span class="type1">立即领取</span><span  class="type2">已领取</span></p>
+                </div>
+              </div>              
+
+            <div class="row">
+                <div class="hongbao type2 yu-grid">
+                    <div class="yu-overflow yu-textl">
+                      <p class="yu-bmar10"><i class="yu-font14">￥</i><i class="yu-font30">10</i></p>
+                      <p class="yu-font14">订房红包</p>
+                      <p class="yu-font14">有效期2017.01.01-2017.01.15</p>
+                    </div>
+                    <p class="hongbao-state"><span class="type1">立即领取</span><span  class="type2">已领取</span></p>
+                </div>
+              </div>                     
+
+
+            </div>  
+            <div class="get-btn2">完成</div>        
+         </div>
+</div>
+
+
+ <div class="mask big-pic" style="display:block">
+   <div class="inner">
+      <div class="close"></div>
+     <h3>豪华客房-大床</h3>
+      <div class="big-img-box">
+        <img src="images/114.png" />
+      </div>
+      <div class="big-img-detail">
+        <table>
+          <tr>
+            <td>早餐：无早</td>
+            <td>面积：15㎡</td>
+          </tr>
+          <tr>
+            <td>宽带：免费</td>
+            <td>楼层：7-11</td>
+          </tr> 
+          <tr>
+            <td>床型：大床</td>
+            <td>加床：不能加床</td>
+          </tr>                   
+        </table>
+      </div>
+      <div class="yu-grid">
+        <p class="yu-overflow yu-line50 yu-lpad10 yu-h50 yu-orange">
+          <i class="yu-font14">￥</i>
+          <i class="yu-font24">140</i>
+        </p>
+        <p class="book-btn">预订</p>
+      </div>
+
+   </div>
+ </div>
+<script type="text/javascript">
+
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false,
+        loop: true,
+        onSlideChangeEnd:function(swiper){ $(".activeIndex").text(swiper.activeIndex); }
+    });
+    
+
+$("#datepicker").datepicker({
+            dateFormat: 'yy-mm-dd',
+            dayNamesMin: ["日", "一", "二", "三", "四", "五", "六"],
+            monthNames: ["1月", "2月", "3月", "4月", "5月", "6月",
+      "7月", "8月", "9月", "10月", "11月", "12月"],
+            yearSuffix: '年',
+            showMonthAfterYear: true,
+            minDate: new Date(),
+            maxDate: '2017-12-31',
+            numberOfMonths:2,
+            showButtonPanel:false,
+            onSelect: function (selectedDate) {
+                sDate = selectedDate;
+                console.log(sDate);
+                $(".base-page").show();
+                $(".date-page").hide();     
+                $(".start-date").text(sDate);             
+            }
+        });  
+  $(function(){
+
+    $(".tc-box li").on("click",function(){
+      $(this).addClass("cur").siblings().removeClass("cur");
+    });
+    $(".rooms-date-change").click(function(){
+      $(".base-page").hide();
+        $(".date-page").show();
+
+    });
+    $(".date-page .back").click(function(){
+      $(".base-page").show();
+      $(".date-page").hide();  
+
+
+      
+        
+    });
+    $(".ui-state-default").mouseenter(function(){
+    });
+    //选项卡
+    var tabIndex;
+    $(".tab").on("click","li",function(){
+      $(this).addClass("cur").siblings().removeClass("cur");
+      tabIndex=$(this).index();
+      $(".tab-box").eq(tabIndex).addClass("cur").siblings(".tab-box").removeClass("cur");
+    })
+    //加减数量
+    var pNum=parseInt($(".buy-num-input").val());
+    $(".sy").on("click",function(){
+      if($(this).hasClass("jia")){
+        pNum++;
+        $(".buy-num-input").val(pNum);
+      }else if($(this).hasClass("jian")&&pNum>1){
+        pNum--;
+        $(".buy-num-input").val(pNum);
+      };
+    });
+    //领取会员卡
+    $(".get-card .close").click(function(){
+      $(".hyk-mask").fadeOut();
+
+    })
+    //领取红包
+  $(".get-quan").click(function(){
+      $(".lqhb").fadeIn();
+    })    
+    $(".select-box .row").on("click",function(){
+      $(this).addClass("cur");
+    })
+    $(".get-btn2").click(function(){
+      $(".lqhb").fadeOut();
+    })
+    //*********************
+    $(".room-content-head").on("click",function(){
+          $(this).toggleClass("cur").siblings(".room-content").slideToggle();
+          // $(this).toggleClass("cur").siblings(".room-content").toggle();
+        });       
+
+  })
+</script>
+</body>
+</html>

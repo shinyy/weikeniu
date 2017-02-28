@@ -170,7 +170,12 @@ img {
   text-indent: 1em;
 }
 .rooms-list > li {
-  border-bottom: 1px solid #ccc;
+      border-style: solid;
+    -moz-border-image: url(../images/border-image.png)2 2 stretch;
+    -o-border-image: url(../images/border-image.png)2 2 stretch;
+    -webkit-border-image: url(../images/border-image.png)2 2 stretch;
+    border-image: url(../images/border-image.png) 2 2 stretch;
+    border-width: 0 0 1px 0;
   box-sizing: border-box;
   overflow: hidden;
   padding: 10px;
@@ -581,7 +586,7 @@ html .ui-button.ui-state-disabled:active {
   height: 45px;
 }
 .order-btn.over:before {
-  content: "ט®¢ו®";
+  content: "订完";
   line-height: 45px;
 }
 .yu-line60 {
@@ -703,3 +708,124 @@ html .ui-button.ui-state-disabled:active {
 .div {
   background: #00a0e9;
 }
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 50;
+    display: none;
+}
+
+/*公共样式order-details member*/
+.main{
+  background: #fff;
+}
+.yu-bor{
+      border-style: solid;
+    -moz-border-image: url(../images/border-image.png)2 2 stretch;
+    -o-border-image: url(../images/border-image.png)2 2 stretch;
+    -webkit-border-image: url(../images/border-image.png)2 2 stretch;
+    border-image: url(../images/border-image.png) 2 2 stretch;
+}
+.yu-bor.bbor{
+      border-width:  0 0 1px 0;
+}
+.yu-bor.rbor{
+  border-width: 0 1px 0 0;
+}
+.yu-bor.tbbor{
+  border-width:  1px 0 1px 0;
+}
+.yu-rmar10{
+  margin-right: 10px;
+}
+.yu-lrpad10{
+  padding: 0 10px;
+}
+.yu-pad10{
+  padding: 10px;
+}
+
+.orderico{
+  line-height: 40px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.orderico>span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url(../images/orderico.png) no-repeat;
+  transform:scale(0.5);
+  vertical-align: bottom;
+  margin-left:-10px;
+  margin-right: -5px;
+}
+.orderico.type1>span{
+  background-position: 0 0;
+}
+.orderico.type2>span{
+  background-position: 0 -40px;
+}
+.orderico.type3>span{
+  background-position: 0 -80px;
+}
+.orderico.type4>span{
+  background-position: 0 -120px;
+}
+.orderico.type5>span{
+  background-position: 0 -160px;
+}
+.orderico.type6>span{
+  background-position: 0 -200px;
+}
+.orderico.type7>span{
+  background-position: 0 -240px;
+}
+.orderico.type1,.orderico.type6{
+  color: #f60;
+}
+.orderico.type2{
+  color: #b28850;
+}
+.orderico.type3{
+  color: #13b83a;
+}
+.orderico.type4{
+  color: #13b5b1;
+}
+.orderico.type5,.orderico.type7{
+  color: #9db513;
+}
+ .yu-tbpad10{
+  padding: 10px 0;
+ }
+ .yu-greys{
+  color: #666;
+ }
+ .yu-bmar5{
+  margin-bottom: 5px;
+ }
+ .yu-rpad10{
+  padding-right: 10px;
+ }
+ .yu-arr.type-down:before{
+    border-right: 2px solid #999;
+    border-bottom: 2px solid #999;
+    transform:rotate(45deg);
+    top: 50%;
+    margin-top: -10px;
+    right: -2px;
+ }
+ .yu-rpad20{
+  padding-right: 20px;
+ }
+ .yu-lpad20{
+  padding-left: 20px;
+ }
+.yu-lpad30{
+  padding-left: 30px;
+ } 
