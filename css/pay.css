@@ -1,130 +1,129 @@
-*{
-	margin:0;
-	padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-	background: #f3f3f3;
-    min-width: 320px;
+body {
+  background: #f3f3f3;
+  min-width: 320px;
 }
-.tc-info{
-	padding: 10px;
-	background: #fff;
-	border-bottom: 1px solid #ccc;
-	margin-bottom: 10px;
+.tc-info {
+  padding: 10px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
 }
-.text-over{
-	    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+.text-over {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.tc-info>p{
-	width: 100%;
-	height: 30px;
-	font-family: microsoft yahei,simhei;
-	line-height: 30px;
+.tc-info > p {
+  width: 100%;
+  height: 30px;
+  font-family: microsoft yahei,simhei;
+  line-height: 30px;
 }
-.row2{
-	font-size: 14px;
-	color:#999;
+.row2 {
+  font-size: 14px;
+  color: #999;
 }
-.row3{
-	font-size:12px;
-	color: #f60;
+.row3 {
+  font-size: 12px;
+  color: #f60;
 }
-.user-info{
-	border-top:1px solid #ccc;
-	border-bottom:1px solid #ccc;
-	padding: 0 10px;
-	background: #fff;
+.user-info {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0 10px;
+  background: #fff;
 }
-.user-info dl{
-	border-bottom: 1px solid #ccc;
-	height: 50px;
-	position: relative;
-	padding-left: 105px;
+.user-info dl {
+  border-bottom: 1px solid #ccc;
+  height: 50px;
+  position: relative;
+  padding-left: 105px;
 }
-.user-info dl dt{
-	    min-width: 105px;
-    font: 16px/50px microsoft yahei,simhei;
-    position: absolute;
-    top: 0;
-    left: 0;
+.user-info dl dt {
+  min-width: 105px;
+  font: 16px/50px microsoft yahei, simhei;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.user-info dl dd{
-	width: 100%;
+.user-info dl dd {
+  width: 100%;
 }
-.user-info dl dd input{
-	display: block;
-	border: 0;
-	height: 50px;
-	outline: 0;
-	font-size: 14px;
+.user-info dl dd input {
+  display: block;
+  border: 0;
+  height: 50px;
+  outline: 0;
+  font-size: 14px;
 }
-.user-info .last{
-	border:0;
+.user-info .last {
+  border: 0;
 }
-.pay-row{
-	position: fixed;
-	width: 100%;
-	bottom: 0;
-	height: 50px;
-	background: #fff;
-	border-top: 1px solid #ccc;
+.pay-row {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  background: #fff;
+  border-top: 1px solid #ccc;
 }
-.total-money{
-	font:16px/50px microsoft yahei,simhei;
-	padding-left: 10px;
+.total-money {
+  font: 16px/50px microsoft yahei, simhei;
+  padding-left: 10px;
 }
-.total-money span{
-	font-size: 18px;
-	color: #f60;
+.total-money span {
+  font-size: 18px;
+  color: #f60;
 }
-.pay-btn{
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100px;
-	height: 50px;
-	background: #f60;
-	color: #fff;
-	text-align: center;
-	font: 18px/50px microsoft yahei,simhei;
-	border: 0;
-	outline: 0;
+.pay-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 50px;
+  background: #f60;
+  color: #fff;
+  text-align: center;
+  font: 18px/50px microsoft yahei, simhei;
+  border: 0;
+  outline: 0;
 }
-.back{
-	width: 20px;
-    height: 20px;
-    border-left: 1px solid #333;
-    border-top: 1px solid #333;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    position: absolute;
-    top: 14px;
-    left: 17px;
-    z-index: 999;
+.back {
+  width: 20px;
+  height: 20px;
+  border-left: 1px solid #333;
+  border-top: 1px solid #333;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  position: absolute;
+  top: 14px;
+  left: 17px;
+  z-index: 999;
 }
-.info-text{
-	width: 100%;
-	text-align: right;
-	font:16px/50px microsoft yahei,simhei;
-
+.info-text {
+  width: 100%;
+  text-align: right;
+  font: 16px/50px microsoft yahei, simhei;
 }
-.orange{
-	color: #f60;
+.orange {
+  color: #f60;
 }
-.pay-box{
-	padding: 10px;
+.pay-box {
+  padding: 10px;
 }
-.pay-box .pay{
-	width: 100%;
-	height: 40px;
-	color: #fff;
-	font-size: 16px; 
-	background: #f60;
-	border: 0;
-	outline: 0;
-	border-radius: 5px;
+.pay-box .pay {
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  background: #f60;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
 }

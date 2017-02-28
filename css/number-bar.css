@@ -1,169 +1,170 @@
-.number-bar{
-	display: none;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	  animation: shin-top 250ms ease-in-out, shin-fade 250ms ease-in-out;
-    -webkit-animation: shin-top 250ms ease-in-out, shin-fade 250ms ease-in-out;
-    -moz-animation: shin-top 250ms ease-in-out, shin-fade 250ms ease-in-out;
-    -o-animation: shin-top 250ms ease-in-out, shin-fade 250ms ease-in-out;
+.number-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  animation: shin-top 250ms ease-in-out, shin-fade 250ms ease-in-out;
+  -webkit-animation: shin-top 250ms ease-in-out, shin-fade 250ms ease-in-out;
+  -moz-animation: shin-top 250ms ease-in-out, shin-fade 250ms ease-in-out;
+  -o-animation: shin-top 250ms ease-in-out, shin-fade 250ms ease-in-out;
 }
 /*动画*/
 @keyframes shin-top {
- from {
-transform:translate3d(0, 100%, 0);
-}
-to {
-	transform: translate3d(0, 0%, 0);
-}
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    transform: translate3d(0, 0%, 0);
+  }
 }
 @-webkit-keyframes shin-top {
-from {
--webkit-transform:translate3d(0, 100%, 0);
-}
-to {
-	-webkit-transform: translate3d(0, 0%, 0);
-}
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0%, 0);
+  }
 }
 @-moz-keyframes shin-top {
-from {
--moz-transform:translate3d(0, 100%, 0);
-}
-to {
-	-moz-transform: translate3d(0, 0%, 0);
-}
+  from {
+    -moz-transform: translate3d(0, 100%, 0);
+  }
+  to {
+    -moz-transform: translate3d(0, 0%, 0);
+  }
 }
 @-o-keyframes shin-top {
-from {
--o-transform:translate3d(0, 100%, 0);
-}
-to {
-	-o-transform: translate3d(0, 0%, 0);
-}
+  from {
+    -o-transform: translate3d(0, 100%, 0);
+  }
+  to {
+    -o-transform: translate3d(0, 0%, 0);
+  }
 }
 @keyframes shin-fade {
- from {
-opacity:0
-}
-to {
-	opacity: 1
-}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @-webkit-keyframes shin-fade {
- from {
-opacity:0
-}
-to {
-	opacity: 1
-}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @-moz-keyframes shin-fade {
- from {
-opacity:0
-}
-to {
-	opacity: 1
-}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @-o-keyframes shin-fade {
- from {
-opacity:0
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-to {
-	opacity: 1
+.num-key-row,
+.scrn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
+.num-key-row > p {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  color: #888;
+  font-size: 20px;
+  border-style: solid;
+  -moz-border-image: url(../images/border-image.png) 2 2 stretch;
+  -o-border-image: url(../images/border-image.png) 2 2 stretch;
+  -webkit-border-image: url(../images/border-image.png) 2 2 stretch;
+  border-image: url(../images/border-image.png) 2 2 stretch;
+  border-width: 1px 1px 0 0;
 }
-.num-key-row,.scrn{
-	display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
+.num-key-row > p:active {
+  background: #f3f3f3;
 }
-.num-key-row>p{
-	    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    text-align: center;
-    height: 60px;
-    line-height: 60px;
-    color: #888;
-    font-size: 20px;
-    border-style: solid;
-    -moz-border-image: url(../images/border-image.png)2 2 stretch;
-    -o-border-image: url(../images/border-image.png)2 2 stretch;
-    -webkit-border-image: url(../images/border-image.png)2 2 stretch;
-    border-image: url(../images/border-image.png) 2 2 stretch;
-    border-width: 1px 1px 0 0;
+.num-key {
+  background: #fff;
+  border-style: solid;
+  -moz-border-image: url(../images/border-image.png) 2 2 stretch;
+  -o-border-image: url(../images/border-image.png) 2 2 stretch;
+  -webkit-border-image: url(../images/border-image.png) 2 2 stretch;
+  border-image: url(../images/border-image.png) 2 2 stretch;
+  border-width: 0 0 1px 1px;
 }
-.num-key-row>p:active{
-	background: #f3f3f3;
+.num-key-row .submit {
+  color: #fff;
+  background: #ccc;
 }
-.num-key{
-	background: #fff;
-border-style: solid;
-    -moz-border-image: url(../images/border-image.png)2 2 stretch;
-    -o-border-image: url(../images/border-image.png)2 2 stretch;
-    -webkit-border-image: url(../images/border-image.png)2 2 stretch;
-    border-image: url(../images/border-image.png) 2 2 stretch;
-    border-width:  0 0 1px 1px;	
+.num-key-row .submit.cur {
+  background: #12b93a;
 }
-.num-key-row .submit{
-	color: #fff;
-	background: #ccc;
+.num-key-row .submit.cur:active {
+  background: #0e942e;
 }
-.num-key-row .submit.cur{
-	background: #12b93a;
+.slide-bar {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  background: #f3f3f3;
 }
-.num-key-row .submit.cur:active{
-	background: #0e942e;
+.slide-bar:before {
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid #ababab;
+  border-right: 1px solid #ababab;
+  transform: rotate(135deg);
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  margin-left: -5px;
 }
-.slide-bar{
-	width: 100%;
-	height: 30px;
-	position: relative;
-	background: #f3f3f3;
+.scrn {
+  background: #333;
+  height: 60px;
 }
-.slide-bar:before{
-	width: 10px;
-	height: 10px;
-	border-top: 1px solid #ababab;
-	border-right: 1px solid #ababab;
-	transform:rotate(135deg);
-	content: "";
-	position: absolute;
-	top: 7px;
-	left: 50%;
-	margin-left: -5px;
+.sjh {
+  width: 100px;
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+  line-height: 60px;
 }
-.scrn{
-	background: #333;
-	height: 60px;
+.scrn-txt {
+  color: #f50;
+  font-size: 30px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  line-height: 60px;
+  text-align: left;
 }
-.sjh{
-	width: 100px;
-	color: #999;
-	font-size: 14px;
-	text-align: center;
-	line-height: 60px;
-}
-.scrn-txt{
-	color: #f50;
-	font-size: 30px;
- -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;	
-    line-height: 60px;
-    text-align: left;
-}
-.del>span{
-	display: block;
-	margin: 0 auto;
-	width: 98px;
-	height: 60px;
-	background: url(../images/del.png) no-repeat;
-	transform:scale(0.3);
+.del > span {
+  display: block;
+  margin: 0 auto;
+  width: 98px;
+  height: 60px;
+  background: url(../images/del.png) no-repeat;
+  transform: scale(0.3);
 }

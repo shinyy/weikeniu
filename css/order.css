@@ -1,42 +1,39 @@
-.order-info-box{
-	background: #fff;
-    width: 96%;
-    padding: 10px 2%;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ddd;
+.order-info-box {
+  background: #fff;
+  width: 96%;
+  padding: 10px 2%;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
 }
-.cancel-btn{
-	    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    overflow: hidden;
-    height: 30px;
-    border-radius: 5px;
-    border: none;
-    font: 14px microsoft yehei,simhei;
-    margin-right: 10px;
+.cancel-btn {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  font: 14px microsoft yehei,simhei;
+  margin-right: 10px;
 }
-.continue-btn{
-	    -webkit-box-flex: 2;
-    -webkit-flex: 2;
-    -ms-flex: 2;
-    flex: 2;
-    overflow: hidden;
-    height: 30px;
-    border-radius: 5px;
-    border: none;
-    font: 14px microsoft yehei,simhei;
-    background: #f60;
-    color: #fff;
+.continue-btn {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  overflow: hidden;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  font: 14px microsoft yehei,simhei;
+  background: #f60;
+  color: #fff;
 }
-.hx-btn{
-    color: #fff;
-    font-size:12px;
-    background: #00a0e9;
-    padding: 0 5px;
-    border-radius:3px;
+.hx-btn {
+  color: #fff;
+  font-size: 12px;
+  background: #00a0e9;
+  padding: 0 5px;
+  border-radius: 3px;
 }
-
-
-
