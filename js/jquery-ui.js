@@ -7987,7 +7987,7 @@ $.extend( Datepicker.prototype, {
 
 		inst.dpDiv.removeClass( "ui-datepicker-multi-2 ui-datepicker-multi-3 ui-datepicker-multi-4" ).width( "" );
 		if ( cols > 1 ) {
-			// inst.dpDiv.addClass( "ui-datepicker-multi-" + cols ).css( "width", ( width * cols ) + "em" );
+			//inst.dpDiv.addClass( "ui-datepicker-multi-" + cols ).css( "width", ( width * cols ) + "em" );
 			inst.dpDiv.addClass( "ui-datepicker-multi-" + cols ).css( "width", "100%");
 
 		}

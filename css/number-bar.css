@@ -8,6 +8,7 @@
   -webkit-animation: shin-top 250ms ease-in-out, shin-fade 250ms ease-in-out;
   -moz-animation: shin-top 250ms ease-in-out, shin-fade 250ms ease-in-out;
   -o-animation: shin-top 250ms ease-in-out, shin-fade 250ms ease-in-out;
+  z-index: 999;
 }
 /*动画*/
 @keyframes shin-top {

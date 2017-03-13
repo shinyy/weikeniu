@@ -377,6 +377,14 @@ strong {
   border-image: url(../images/border-image.png) 2 2 stretch;
   border-width: 1px 0 0 0;
 }
+.pay-detail.sp{
+	position: static;
+	border-width: 0 0 1px 0;
+	 animation: none;
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+} 
 .yu-pad20 {
   padding: 20px;
 }
@@ -520,7 +528,7 @@ strong {
 }
 .hongbao-state {
   width: 100px;
-  height: 108px;
+  /*height: 108px;*/
   border-left: 1px dashed #cbcbcb;
   text-align: center;
   line-height: 108px;

@@ -19,9 +19,11 @@
 
 <link type="text/css" rel="stylesheet" href="css/jquery-ui.css"/>
 <link type="text/css" rel="stylesheet" href="css/sale-date.css"/>
+<link type="text/css" rel="stylesheet" href="css/newlist.css"/>
+
 <link type="text/css" rel="stylesheet" href="css/iconfont/iconfont.css"/>
 <link type="text/css" rel="stylesheet" href="css/list.css"/>
-<link type="text/css" rel="stylesheet" href="css/newlist.css"/>
+
 <link type="text/css" rel="stylesheet" href="css/newpay.css"/>
 
 
@@ -254,7 +256,7 @@
 
             </div>
             <div class="order-btn">
-              <span>担保</span>
+              <span class="type1">担保</span>
             </div>              
             </li>            
         </ul>
@@ -517,12 +519,16 @@
 </div>
 
 
- <div class="mask big-pic" style="display:block">
+ <div class="mask big-pic">
    <div class="inner">
       <div class="close"></div>
      <h3>豪华客房-大床</h3>
-      <div class="big-img-box">
-        <img src="images/114.png" />
+      <div class="big-img-box swiper-container2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/114.png" /></div>
+          <div class="swiper-slide"><img src="images/114.png" /></div>
+          <div class="swiper-slide"><img src="images/114.png" /></div>
+      </div>
       </div>
       <div class="big-img-detail">
         <table>
@@ -572,7 +578,7 @@ $("#datepicker").datepicker({
             minDate: new Date(),
             maxDate: '2017-12-31',
             numberOfMonths:2,
-            showButtonPanel:false,
+            showButtonPanel:true,
             onSelect: function (selectedDate) {
                 sDate = selectedDate;
                 console.log(sDate);
@@ -582,6 +588,19 @@ $("#datepicker").datepicker({
             }
         });  
   $(function(){
+  	
+  	
+  	//日历
+  	$(".ui-datepicker").css("width","100%");
+//	$(".ui-datepicker-prev,.ui-datepicker-next").on("click",function(){
+//		$(".ui-datepicker").css("width","100%");
+//	})
+	$("#datepicker").on("click",".ui-datepicker-next",function(){
+		$(".ui-datepicker").css("width","100%");
+	})
+  	//************
+  	
+  	
 
     $(".tc-box li").on("click",function(){
       $(this).addClass("cur").siblings().removeClass("cur");
@@ -633,6 +652,19 @@ $("#datepicker").datepicker({
     })
     $(".get-btn2").click(function(){
       $(".lqhb").fadeOut();
+    })
+    // 大图
+    $(".big-pic .close").click(function(){
+      $(".big-pic").fadeOut();
+    })
+    $(".room-pic").on("click",function(e){
+      $(".big-pic").fadeIn();
+       e.stopPropagation();
+       var swiper2 = new Swiper('.swiper-container2', {
+            paginationClickable: true,
+            autoplayDisableOnInteraction: false,
+            loop: true
+        });  
     })
     //*********************
     $(".room-content-head").on("click",function(){

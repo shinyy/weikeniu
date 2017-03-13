@@ -17,7 +17,7 @@
 <title>订单详情</title>
 <link type="text/css" rel="stylesheet" href="css/sale-date.css"/>
 <link type="text/css" rel="stylesheet" href="css/order-details.css"/>
-
+<link type="text/css" rel="stylesheet" href="css/newpay.css"/>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 </head>
 <body>
@@ -32,8 +32,41 @@
        <p class="yu-orange yu-rmar10">在线支付￥<span class="yu-font20">367</span></p>
        <p class="yu-grey yu-font14">未支付</p>
      </div>
-     <div class="yu-font14 yu-blue yu-arr type-down yu-rpad20">费用明细</div>
-   </div>
+     <div class="yu-font14 yu-blue yu-arr type-down yu-rpad20 cost-btn">费用明细</div>
+    </div>
+    <div>
+    	<div class="pay-detail sp">
+        <div class="yu-pad20">
+          <ul class="pay-dateil-list">
+                    <li class="yu-grid">
+                      <p>在线支付</p>
+                      <p class="yu-overflow">&nbsp;</p>
+                      <p class="orange">￥367</p>
+                    </li>
+                    <li class="yu-grid">
+                      <p class="yu-greys">房费（1间X1晚）</p>
+                      <p class="yu-overflow yu-nowrap yu-greys">----------------------------------------------------------------------------------------</p>
+                      <p class="yu-greys yu-linet">￥280</p>
+                    </li>  
+                    <li class="yu-grid">
+                      <p class="yu-greys">高级会员折扣价</p>
+                      <p class="yu-overflow yu-nowrap yu-greys">----------------------------------------------------------------------------------------</p>
+                      <p class="orange">280*0.99=￥277</p>
+                    </li>                     
+                    <li class="yu-grid">
+                      <p class="yu-greys">使用优惠券抵扣</p>
+                      <p class="yu-overflow yu-nowrap yu-greys">----------------------------------------------------------------------------------------</p>
+                      <p class="yu-greys">-￥10</p>
+                    </li>  
+                    <li class="yu-grid">
+                      <p class="yu-greys">提前交酒店押金</p>
+                      <p class="yu-overflow yu-nowrap yu-greys">----------------------------------------------------------------------------------------</p>
+                      <p class="yu-greys">￥100</p>
+                    </li>                                                
+                  </ul>          
+        </div>
+      </div>
+    </div>
    <div class="yu-pad10 yu-bor bbor">
      <ul>
        <li>
@@ -128,7 +161,7 @@
       </dd>
     </dl>    
   </section>
-  <div class="mask" style="display:block">
+  <div class="mask">
     <div class="inner">
       <div>
         <p class="orderico type6">
@@ -145,5 +178,13 @@
       </div>      
     </div>
   </div>
+  <script>
+  	$(function(){
+  		$(".cost-btn").click(function(){
+  			$(".pay-detail").toggle();
+  			$(this).toggleClass("type-up")
+  		})
+  	})
+  </script>
 </body>
 </html>

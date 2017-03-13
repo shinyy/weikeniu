@@ -1,0 +1,661 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="keywords" content="关键词1,关键词2,关键词3" />
+<meta name="description" content="对网站的描述" />
+<meta name="format-detection" content="telephone=no">
+<!--自动将网页中的电话号码显示为拨号的超链接-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!--width宽度height高度，initial-scale初始的缩放比例，minimum-scale允许缩放到的最小比例，maximum-scale允许缩放到的最大比例，user-scalable是否可以手动缩放-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--IOS设备-->
+<meta name="apple-touch-fullscreen" content="yes">
+<!--IOS设备-->
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<title>订餐首页</title>
+<link type="text/css" rel="stylesheet" href="css/swiper-3.4.1.min.css"/>
+<link type="text/css" rel="stylesheet" href="css/sale-date.css"/>
+<link type="text/css" rel="stylesheet" href="css/Restaurant.css"/>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.1.jquery.min.js"></script>
+<!--试验react-->
+<script src="http://static.runoob.com/assets/react/react-0.14.7/build/react.min.js"></script>
+<script src="http://static.runoob.com/assets/react/react-0.14.7/build/react-dom.min.js"></script>
+<script src="http://static.runoob.com/assets/react/browser.min.js"></script>
+
+</head>
+<body>
+<div class="tab-con">
+<ul class="tab-nav type0 yu-grid yu-bor bbor">
+	<li class="yu-overflow cur">酒店餐饮</li>
+	<li class="yu-overflow">周边餐饮</li>
+</ul>
+<ul class="tab-inner">
+<li  class="cur">
+<div class="base-page">
+<div id="main">
+  <div class="hotel-img-box swiper-container">
+    <div class="swiper-wrapper">
+      	<div class="swiper-slide"><img src="images/114.png" /></div>
+        <div class="swiper-slide"><img src="images/114.png" /></div>
+        <div class="swiper-slide"><img src="images/114.png" /></div>
+		</div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<section class="main">
+	<div class="tab-con">
+		<ul class="tab-nav yu-grid type1 yu-bor bbor">
+			<li class="yu-overflow cur"><p>点菜<p/></li>
+			<li class="yu-overflow"><p>图片<p/></li>
+		</ul>
+		<ul class="tab-inner">
+			<li class="cur">
+				<div class="yu-grid tab-con">
+					<ul class="tab-nav type2">
+						<li class="cur yu-bor bbor yu-grid h-ico"><span class="ico type1"></span><p>热销榜</p></li>
+						<li class=" yu-bor bbor yu-grid h-ico"><span class="ico type2"></span><p>优惠</p></li>
+						<li class=" yu-bor bbor">新品推荐</li>
+						<li class=" yu-bor bbor">人气双拼</li>
+						<li class=" yu-bor bbor">经典套餐</li>
+						<li class=" yu-bor bbor">营养炖品</li>
+						<li class=" yu-bor bbor">蒸蒸日上</li>
+				</ul>
+				<ul class="tab-inner yu-overflow">
+					<li class="cur">
+						<dl class="food-list">
+							<dt>热销榜</dt>
+							<dd>
+								<div class="yu-grid yu-alignc yu-bor bbor">
+									<div class="food-pic"><img src="images/nopic.png" /></div>
+									<div class="yu-overflow yu-tpad5">
+										<p class="yu-font14">干炒牛河</p>
+										<p class="yu-font12 yu-grey yu-bmar5">月售186 赞99</p>
+										<div class="yu-grid yu-alignc">
+											<p class="yu-overflow yu-orange"><i class="yu-font12">￥</i><i class="yu-font18">31</i></p>
+											<div class="ar yu-grid">
+												<p class="reduce ico"></p>
+												<p class="food-num">111</p>
+												<p class="add ico"></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="yu-grid yu-alignc yu-bor bbor">
+									<div class="food-pic"><img src="images/nopic.png" /></div>
+									<div class="yu-overflow yu-tpad5">
+										<p class="yu-font14">干炒牛河</p>
+										<p class="yu-font12 yu-grey yu-bmar5">月售186 赞99</p>
+										<div class="yu-grid yu-alignc">
+											<p class="yu-overflow yu-orange"><i class="yu-font12">￥</i><i class="yu-font18">31</i></p>
+											<div class="ar yu-grid">
+												<p class="reduce ico"></p>
+												<p class="food-num"></p>
+												<p class="add ico"></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="yu-grid yu-alignc yu-bor bbor">
+									<div class="food-pic"><img src="images/nopic.png" /></div>
+									<div class="yu-overflow yu-tpad5">
+										<p class="yu-font14">干炒牛河</p>
+										<p class="yu-font12 yu-grey yu-bmar5">月售186 赞99</p>
+										<div class="yu-grid yu-alignc">
+											<p class="yu-overflow yu-orange"><i class="yu-font12">￥</i><i class="yu-font18">31</i></p>
+											<div class="ar yu-grid">
+												<p class="reduce ico"></p>
+												<p class="food-num"></p>
+												<p class="add ico"></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="yu-grid yu-alignc yu-bor bbor">
+									<div class="food-pic"><img src="images/nopic.png" /></div>
+									<div class="yu-overflow yu-tpad5">
+										<p class="yu-font14">干炒牛河</p>
+										<p class="yu-font12 yu-grey yu-bmar5">月售186 赞99</p>
+										<div class="yu-grid yu-alignc">
+											<p class="yu-overflow yu-orange"><i class="yu-font12">￥</i><i class="yu-font18">31</i></p>
+											<div class="ar yu-grid">
+												<p class="reduce ico"></p>
+												<p class="food-num"></p>
+												<p class="add ico"></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="yu-grid yu-alignc yu-bor bbor">
+									<div class="food-pic"><img src="images/nopic.png" /></div>
+									<div class="yu-overflow yu-tpad5">
+										<p class="yu-font14">干炒牛河</p>
+										<p class="yu-font12 yu-grey yu-bmar5">月售186 赞99</p>
+										<div class="yu-grid yu-alignc">
+											<p class="yu-overflow yu-orange"><i class="yu-font12">￥</i><i class="yu-font18">31</i></p>
+											<div class="ar yu-grid">
+												<p class="reduce ico"></p>
+												<p class="food-num"></p>
+												<p class="add ico"></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="yu-grid yu-alignc yu-bor bbor">
+									<div class="food-pic"><img src="images/nopic.png" /></div>
+									<div class="yu-overflow yu-tpad5">
+										<p class="yu-font14">干炒牛河</p>
+										<p class="yu-font12 yu-grey yu-bmar5">月售186 赞99</p>
+										<div class="yu-grid yu-alignc">
+											<p class="yu-overflow yu-orange"><i class="yu-font12">￥</i><i class="yu-font18">31</i></p>
+											<div class="ar yu-grid">
+												<p class="reduce ico"></p>
+												<p class="food-num"></p>
+												<p class="add ico"></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl class="food-list">
+							<dt>优惠</dt>
+							<dd>
+								<div class="yu-grid yu-alignc yu-bor bbor">
+									<div class="food-pic"><img src="images/nopic.png" /></div>
+									<div class="yu-overflow yu-tpad5">
+										<p class="yu-font14">湿炒牛河</p>
+										<p class="yu-font12 yu-grey yu-bmar5">月售186 赞99</p>
+										<div class="yu-grid yu-alignc">
+											<p class="yu-overflow yu-orange"><i class="yu-font12">￥</i><i class="yu-font18">31</i></p>
+											<div class="ar yu-grid">
+												<p class="reduce ico"></p>
+												<p class="food-num"></p>
+												<p class="add ico"></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								
+								
+								
+								
+							</dd>
+						</dl>
+					</li>
+				</ul>
+				</div>
+			</li>
+			
+			
+			
+			<li  class="yu-bgf3">
+				<div class="yu-grid yu-tbpad10">
+					<a href="#" class="yu-overflow sp">
+						<div class="food-box yu-bor1 bor">
+							<div class="food-pic2">
+								<img src="images/food_03.jpg" />
+							</div>
+							<div class="yu-grid">
+								<p class="yu-overflow yu-black">蘑菇白灼青菜</p>
+								<p class="yu-orange"><i class="yu-font12">￥</i><i class="yu-font16">22</i></p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="yu-overflow sp">
+						<div class="food-box yu-bor1 bor">
+							<div class="food-pic2">
+								<img src="images/food_03.jpg" />
+							</div>
+							<div class="yu-grid">
+								<p class="yu-overflow yu-black">蘑菇白灼青菜</p>
+								<p class="yu-orange"><i class="yu-font12">￥</i><i class="yu-font16">22</i></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				
+				
+				<div class="yu-grid yu-tbpad10">
+					<a href="#" class="yu-overflow sp">
+						<div class="food-box yu-bor1 bor">
+							<div class="food-pic2">
+								<img src="images/food_03.jpg" />
+							</div>
+							<div class="yu-grid">
+								<p class="yu-overflow yu-black">蘑菇白灼青菜</p>
+								<p class="yu-orange"><i class="yu-font12">￥</i><i class="yu-font16">22</i></p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="yu-overflow sp">
+						<div class="food-box yu-bor1 bor">
+							<div class="food-pic2">
+								<img src="images/food_03.jpg" />
+							</div>
+							<div class="yu-grid">
+								<p class="yu-overflow yu-black">蘑菇白灼青菜</p>
+								<p class="yu-orange"><i class="yu-font12">￥</i><i class="yu-font16">22</i></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="yu-grid yu-tbpad10">
+					<a href="#" class="yu-overflow sp">
+						<div class="food-box yu-bor1 bor">
+							<div class="food-pic2">
+								<img src="images/food_03.jpg" />
+							</div>
+							<div class="yu-grid">
+								<p class="yu-overflow yu-black">蘑菇白灼青菜</p>
+								<p class="yu-orange"><i class="yu-font12">￥</i><i class="yu-font16">22</i></p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="yu-overflow sp">
+						<div class="food-box yu-bor1 bor">
+							<div class="food-pic2">
+								<img src="images/food_03.jpg" />
+							</div>
+							<div class="yu-grid">
+								<p class="yu-overflow yu-black">蘑菇白灼青菜</p>
+								<p class="yu-orange"><i class="yu-font12">￥</i><i class="yu-font16">22</i></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="yu-grid yu-tbpad10">
+					<a href="#" class="yu-overflow sp">
+						<div class="food-box yu-bor1 bor">
+							<div class="food-pic2">
+								<img src="images/food_03.jpg" />
+							</div>
+							<div class="yu-grid">
+								<p class="yu-overflow yu-black">蘑菇白灼青菜</p>
+								<p class="yu-orange"><i class="yu-font12">￥</i><i class="yu-font16">22</i></p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="yu-overflow sp">
+						<div class="food-box yu-bor1 bor">
+							<div class="food-pic2">
+								<img src="images/food_03.jpg" />
+							</div>
+							<div class="yu-grid">
+								<p class="yu-overflow yu-black">蘑菇白灼青菜</p>
+								<p class="yu-orange"><i class="yu-font12">￥</i><i class="yu-font16">22</i></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="yu-grid yu-tbpad10">
+					<a href="#" class="yu-overflow sp">
+						<div class="food-box yu-bor1 bor">
+							<div class="food-pic2">
+								<img src="images/food_03.jpg" />
+							</div>
+							<div class="yu-grid">
+								<p class="yu-overflow yu-black">蘑菇白灼青菜</p>
+								<p class="yu-orange"><i class="yu-font12">￥</i><i class="yu-font16">22</i></p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="yu-overflow sp">
+						<div class="food-box yu-bor1 bor">
+							<div class="food-pic2">
+								<img src="images/food_03.jpg" />
+							</div>
+							<div class="yu-grid">
+								<p class="yu-overflow yu-black">蘑菇白灼青菜</p>
+								<p class="yu-orange"><i class="yu-font12">￥</i><i class="yu-font16">22</i></p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+</div>
+<!--end--> 
+<!--底栏-->
+<section class="mask bottomMask"></section>
+<footer class="yu-grid fix-bottom yu-bor tbor yu-lpad10 touch_action">
+	<div class="food-details up-slide-ani">
+		<dl>
+			<dt class="yu-grid yu-bor bbor yu-h40 yu-alignc yu-lrpad10">
+				<span class="ico type1"></span>
+				<p class="yu-rmar10">201A</p>
+				<p class="yu-font12 yu-lgrey yu-overflow">餐饮将送到此房间</p>
+				<div class="yu-grid yu-alignc yu-greys clearall">
+					<span class="ico type3"></span>
+					清空
+				</div>
+			</dt>
+			<dd>
+				<div class="yu-grid yu-bor bbor yu-h50 yu-alignc yu-lrpad10">
+					<p class="yu-overflow">干炒牛河</p>
+					<p class="yu-orange yu-rmar20"><i class="yu-font12">￥</i><i class="yu-font20">23</i></p>
+					<div class="ar yu-grid">
+												<p class="reduce ico"></p>
+												<p class="food-num"></p>
+												<p class="add ico"></p>
+											</div>
+				</div>
+				<div class="yu-grid yu-bor bbor yu-h50 yu-alignc yu-lrpad10">
+					<p class="yu-overflow">干炒牛河</p>
+					<p class="yu-orange yu-rmar20"><i class="yu-font12">￥</i><i class="yu-font20">23</i></p>
+					<div class="ar yu-grid">
+												<p class="reduce ico"></p>
+												<p class="food-num"></p>
+												<p class="add ico"></p>
+											</div>
+				</div>
+				<div class="yu-grid yu-bor bbor yu-h50 yu-alignc yu-lrpad10">
+					<p class="yu-overflow">干炒牛河</p>
+					<p class="yu-orange yu-rmar20"><i class="yu-font12">￥</i><i class="yu-font20">23</i></p>
+					<div class="ar yu-grid">
+												<p class="reduce ico"></p>
+												<p class="food-num"></p>
+												<p class="add ico"></p>
+											</div>
+				</div>
+				<div class="yu-grid yu-bor bbor yu-h50 yu-alignc yu-lrpad10">
+					<p class="yu-overflow">干炒牛河</p>
+					<p class="yu-orange yu-rmar20"><i class="yu-font12">￥</i><i class="yu-font20">23</i></p>
+					<div class="ar yu-grid">
+												<p class="reduce ico"></p>
+												<p class="food-num"></p>
+												<p class="add ico"></p>
+											</div>
+				</div>
+				<div class="yu-grid yu-bor bbor yu-h50 yu-alignc yu-lrpad10">
+					<p class="yu-overflow">干炒牛河</p>
+					<p class="yu-orange yu-rmar20"><i class="yu-font12">￥</i><i class="yu-font20">23</i></p>
+					<div class="ar yu-grid">
+												<p class="reduce ico"></p>
+												<p class="food-num"></p>
+												<p class="add ico"></p>
+											</div>
+				</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt class="yu-grid yu-bor bbor yu-h40 yu-alignc yu-lrpad10">
+				<span class="ico type2"></span>
+				<p class="yu-overflow">201B</p>
+				<i class="ico type4"></i>
+				<p class="yu-font12 yu-lgrey">若需要分装长按商品拖入此房间</p>
+			</dt>
+		</dl>
+		<div class="yu-grid yu-alignc yu-h50 yu-lrpad10">
+			<p>包装费</p>
+			<div class="yu-overflow yu-orange"><i class="yu-font12">￥</i><i class="yu-font20">2.5</i> </div>
+		</div>
+	</div>
+	<div class="gwc-ico"><i class="num"></i><span></span></div>
+	<div class="yu-overflow yu-orange"><!--<i class="yu-font26">共</i>--><i class="yu-font14">￥</i><i class="yu-font26">0</i></div>
+	<div class="yu-greys yu-arr type-up yu-rpad20 yu-rmar10 yu-font14">明细</div>
+	<div class="yu-btn">请选择</div>
+	
+</footer>
+<!--end-->
+<!--mask-->
+<section class="mask bigimg">
+	<div class="inner">
+		<div class="big-food-box swiper-container2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/114.png" /></div>
+          <div class="swiper-slide"><img src="images/114.png" /></div>
+          <div class="swiper-slide"><img src="images/114.png" /></div>
+      </div>
+     </div>
+     <div class="big-food-details">
+     	<p class="yu-font20 yu-bmar5">三丝炒面</p>
+     	<p class="yu-grey yu-font12 yu-bmar10">月售186 赞99</p>
+     	<div  class="la-select">
+     		<div class="cur">
+     			<span class="ico"></span>
+     			<p class="yu-bor1 bor">小辣</p>
+     		</div>
+     		<div>
+     			<span class="ico"></span>
+     			<p class="yu-bor1 bor">中辣</p>
+     		</div>
+     		<div>
+     			<span class="ico"></span>
+     			<p class="yu-bor1 bor">大辣</p>
+     		</div>
+     	</div>
+     	<div class="yu-grid">
+     		<p class="yu-overflow yu-orange yu-font20"><i class="yu-font12">￥</i>31</p>
+     		<div class="ar yu-grid">
+												<p class="reduce ico"></p>
+												<p class="food-num"></p>
+												<p class="add ico"></p>
+				</div>
+     	</div>
+     </div>
+	</div>
+</section>
+	</li>
+	<li id="near-list">
+		<!--<section class="yu-bgw">
+			<div class="yu-pad10 yu-bor bbor">
+				<a href="javascript:;" class="yu-grid">
+					<div class="food-pic"><img src="images/nopic.png" /></div>
+					<div class="yu-overflow">
+					<div class="yu-grid yu-alignc">
+						<div class="yu-overflow  yu-bmar5">
+							<h3 class="yu-font14 yu-fontn yu-black">竹风台湾风味餐厅</h3>
+							<p class="yu-font12">
+								<span class="yu-lgrey">距离0.5km</span>
+								<span class="yu-blue">25分钟</span>
+							</p>
+						</div>
+						<div>
+							<i class="yu-orange yu-font12">￥</i>
+							<span class="yu-orange yu-font20">28</span>
+							<i class="yu-lgrey yu-font14">起</i>
+						</div>
+					</div>
+					<div>
+						<p class="yu-bmar5">
+							<span class="copyico type1">惠</span>
+							<span class="yu-grey yu-font14">本店会员全场9.8折</span>
+						</p>
+						<p>
+							<span class="copyico type2">减</span>
+							<span class="yu-grey yu-font14">全场满100减30，满50减10</span>
+						</p>
+					</div>
+				</div>
+				</a>
+				
+			</div>
+		</section>-->
+	</li>
+	<script type="text/babel">
+		var names=[];
+		for(var i=0;i<10;i++){
+			names[i]=i;
+		}
+		ReactDOM.render(
+			<section className="yu-bgw">
+				{
+					names.map(function(name){
+						return <div className="yu-pad10 yu-bor bbor">
+											<a href="javascript:;" className="yu-grid">
+												<div className="near-pic"><img src="images/nopic.png" /></div>
+												<div className="yu-overflow">
+												<div className="yu-grid yu-alignc">
+													<div className="yu-overflow  yu-bmar5">
+														<h3 className="yu-font14 yu-fontn yu-black">竹风台湾风味餐厅</h3>
+														<p className="yu-font12">
+															<span className="yu-grey yu-rmar5">距离0.5km</span>
+															<span className="yu-grey">|</span>
+															<span className="yu-blue yu-lmar5">25分钟</span>
+														</p>
+													</div>
+													<div>
+														<i className="yu-orange yu-font12">￥</i>
+														<span className="yu-orange yu-font20">28</span>
+														<i className="yu-lgrey yu-font14">起</i>
+													</div>
+												</div>
+												<div>
+													<p className="yu-bmar5">
+														<span className="copyico type1">惠</span>
+														<span className="yu-grey yu-font14">本店会员全场9.8折</span>
+													</p>
+													<p>
+														<span className="copyico type2">减</span>
+														<span className="yu-grey yu-font14">全场满100减30，满50减10</span>
+													</p>
+												</div>
+											</div>
+											</a>
+									</div>
+					})
+				}
+			</section>,
+			document.getElementById("near-list")
+		);
+	</script>
+	</ul>
+	</div>
+<script type="text/javascript">
+		
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        // autoplay: 2500,
+        autoplayDisableOnInteraction: false,
+        loop: true
+    });  
+		
+		
+  $(function(){
+	//scroll高度
+	var overH=$(window).height()-345;
+	$(".tab-nav.type2").height(overH);
+	$(".food-list").height(overH);
+	$(".tab-nav.type2").scroll(function(e){
+		e.preventDefault();
+	})
+  //选项卡
+  var tabIndex;
+  $(".tab-nav").children("li").on("click",function(){
+  	$(this).addClass("cur").siblings("li").removeClass("cur");
+  	tabIndex=$(this).index();
+  	$(this).parent(".tab-nav").siblings(".tab-inner").children("li").eq(tabIndex).addClass("cur").siblings().removeClass("cur");
+  })
+		
+	//加减餐
+	var foodNum=0;
+	var totalNum=0;
+//	$(".add").on("click",function(){
+	$(".food-list,.food-details").find("dd").on("click",".add",function(){
+		totalNum++;
+		$(".yu-btn").text("选好了");
+		if($(this).siblings(".food-num").text()==""){
+			foodNum=1;
+			$(this).siblings(".food-num").text(foodNum);
+		}else{
+			foodNum=parseInt($(this).siblings(".food-num").text());
+			foodNum++;
+			$(this).siblings(".food-num").text(foodNum);
+	};
+		$(this).siblings().fadeIn();
+		$(".gwc-ico .num").text(totalNum);
+		$(".gwc-ico .num").fadeIn();
+	});
+	
+//	$(".reduce").on("click",function(){
+		$(".food-list,.food-details").find("dd").on("click",".reduce",function(){
+		foodNum=parseInt($(this).siblings(".food-num").text());
+		if(foodNum>0){
+			totalNum--;
+			foodNum--;
+			$(this).siblings(".food-num").text(foodNum);
+			$(".gwc-ico .num").text(totalNum);
+			totalNum==0?$(".yu-btn").text("请选择"):$(".yu-btn").text("选好了");
+			if(totalNum==0){
+				$(".yu-btn").text("请选择");
+				$(".gwc-ico .num").fadeOut();
+			}
+			if(foodNum==0&&$(this).parents("dl").hasClass("food-list")){
+				 $(this).fadeOut().siblings(".food-num").fadeOut();	
+			}
+		};
+	});
+	//大图
+	var innerH;
+	$(".mask").click(function(){
+		$(this).fadeOut();
+	})
+	$(".mask .inner").click(function(e){
+		 e.stopPropagation();
+	})
+	$(".food-pic").on("click",function(){
+		$(".bigimg").fadeIn();
+		var swiper2 = new Swiper('.swiper-container2', {
+            paginationClickable: true,
+            autoplayDisableOnInteraction: false,
+            loop: true
+        }); 
+    //大图弹窗高度
+    innerH=$(".bigimg .inner").height();
+    $(".bigimg .inner").css("margin-top",-innerH/2) 
+	});
+	
+	//选择辣味
+	$(".la-select").children("div").on("click",function(){
+		if($(this).hasClass("cur")){
+			$(this).removeClass("cur");
+		}else{
+			$(this).addClass("cur").siblings().removeClass("cur");
+		}
+	})
+	
+	//明细
+	$(".fix-bottom").click(function(){
+		$(".food-details").toggle();
+		$(this).find(".yu-arr").toggleClass("type-up").toggleClass("type-down");
+		$(".bottomMask").fadeToggle();
+	})
+	$(".fix-bottom .yu-btn").click(function(e){
+		 e.stopPropagation();
+	})
+	$(".food-details").click(function(e){
+		 e.stopPropagation();
+	})
+	$(".bottomMask").click(function(){
+		$(".food-details").toggle();
+		$(".fix-bottom").find(".yu-arr").toggleClass("type-up").toggleClass("type-down");
+//		$(".bottomMask").fadeOut();
+	})
+	//清空
+	$(".clearall").click(function(){
+		$(this).parent("dt").siblings("dd").remove();
+	})
+	
+	
+	
+	
+	
+		
+	
+	
+	
+  })
+</script>
+</body>
+</html>

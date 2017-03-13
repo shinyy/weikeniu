@@ -61,7 +61,7 @@
             <div class="icobg icobg1">
               <div class="navico type2"></div>
             </div>
-            <p class="yu-textc">简介
+            <p class="yu-textc">简介2
             </p>
           </a>
           <a class="yu-overflow" href="javascript:;">
@@ -72,7 +72,7 @@
           </a>          
           <a class="yu-overflow" href="javascript:;">
             <div class="icobg icobg3">
-              <div class="navico type"></div>
+              <div class="navico type3"></div>
             </div>
             <p class="yu-textc">地图</p>
           </a>          
@@ -304,7 +304,7 @@
 <!--end-->
 
 <script type="text/javascript">
-
+		
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
@@ -325,6 +325,16 @@
     $(".notice-bar .close").click(function(){
       $(".notice-bar").hide();
     }) 
+    
+    //判断ios或Android
+//		var u = navigator.userAgent, app = navigator.appVersion;
+//		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //android终端或者uc浏览器
+//		var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+//		if(isiOS){
+//			$(".nav-box .yu-grid").css({"margin-top":"-10px",
+//			"margin-bottom":"30px"})
+//		}
+		
 
   })
 </script>
