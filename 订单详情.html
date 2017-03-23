@@ -13,7 +13,7 @@
 <meta name="apple-touch-fullscreen" content="yes">
 <!--IOS设备-->
 <meta http-equiv="Access-Control-Allow-Origin" content="*">
-<title>订餐支付页面</title>
+<title>订单详情</title>
 <link type="text/css" rel="stylesheet" href="css/sale-date.css"/>
 <link type="text/css" rel="stylesheet" href="css/Restaurant.css"/>
 <link type="text/css" rel="stylesheet" href="css/newpay.css">
@@ -42,30 +42,6 @@
 		</a>
 		<div class="colorBorder"></div>
 	</section>
-	
-	
-	
-	<section class="yu-arr yu-bgw yu-bmar10 ">
-		<div class="yu-grid yu-alignc">
-			<a class="gps-ico" href="#"></a>
-			<a class="yu-alignc yu-pad20 yu-overflow" href="编辑信息.html">
-				<div>
-					<p class="yu-black yu-bmar5">
-						<span>李清秋</span>
-						<span>135787454</span>
-					</p>
-					<p class="yu-grey yu-font12">
-						<span>广州桃花江豪生酒店</span>
-						<span>201A房</span>
-					</p>
-				</div>
-			</a>
-		</div>
-		<div class="colorBorder"></div>
-	</section>
-	
-	
-	
 	<section class="yu-bgw yu-bmar10">
 		<div class="yu-h50 yu-lrpad10 yu-grey yu-line50 yu-bor bbor">
 			广州桃花江豪生酒店
@@ -232,8 +208,8 @@
          </div>
          </section>
     <!--end-->
-	<section class="mask bottomMask"></section>
-	<footer class="yu-grid fix-bottom yu-bor tbor yu-lpad10 touch_action">
+	<!--<section class="mask bottomMask"></section>-->
+	<!--<footer class="yu-grid fix-bottom yu-bor tbor yu-lpad10 touch_action">
 	<div class="food-details up-slide-ani">
 		<dl>
 			<dt class="yu-grid yu-bor bbor yu-h40 yu-alignc yu-lrpad10">
@@ -313,6 +289,12 @@
 	<div class="yu-greys yu-arr type-up yu-rpad20 yu-rmar10 yu-font14">明细</div>
 	<div class="yu-btn">去支付</div>
 	
+</footer>-->
+<footer class="fix-bottom yu-pad10 yu-bgw yu-grid">
+	<div class="yu-overflow yu-bor1 bor bottom-btn1 type2">取消订单</div>
+	<div class="yu-overflow yu-bor1 bor bottom-btn1 type2">再来一单</div>
+	<div class="yu-overflow yu-bor1 bor yu-rmar10 bottom-btn1 type1">催单</div>
+	
 </footer>
 <script>
 	$(function(){
@@ -358,22 +340,22 @@
         $(".number-bar").show();
      })
 	//明细
-	$(".fix-bottom").click(function(){
-		$(".food-details").toggle();
-		$(this).find(".yu-arr").toggleClass("type-up").toggleClass("type-down");
-		$(".bottomMask").fadeToggle();
-	})
-	$(".fix-bottom .yu-btn").click(function(e){
-		 e.stopPropagation();
-	})
-	$(".food-details").click(function(e){
-		 e.stopPropagation();
-	})
-	$(".bottomMask").click(function(){
-		$(".food-details").toggle();
-		$(".fix-bottom").find(".yu-arr").toggleClass("type-up").toggleClass("type-down");
-		$(".bottomMask").fadeOut();
-	})
+//	$(".fix-bottom").click(function(){
+//		$(".food-details").toggle();
+//		$(this).find(".yu-arr").toggleClass("type-up").toggleClass("type-down");
+//		$(".bottomMask").fadeToggle();
+//	})
+//	$(".fix-bottom .yu-btn").click(function(e){
+//		 e.stopPropagation();
+//	})
+//	$(".food-details").click(function(e){
+//		 e.stopPropagation();
+//	})
+//	$(".bottomMask").click(function(){
+//		$(".food-details").toggle();
+//		$(".fix-bottom").find(".yu-arr").toggleClass("type-up").toggleClass("type-down");
+//		$(".bottomMask").fadeOut();
+//	})
 	//加减餐
 	var foodNum=0;
 	var totalNum=0;

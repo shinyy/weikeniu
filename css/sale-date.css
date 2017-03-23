@@ -1083,11 +1083,20 @@ h1 {
   background: #f60;
   color: #fff;
   float: left;
+  width: 100px;
+  height: 40px;
 }
 .order-btn.type2 {
   border: 1px solid #ccc;
   color: #999;
   float: right;
+  width: 100px;
+  height: 40px;
+  background: #fff;
+}
+.order-btn.type1:before,
+.order-btn.type2:before {
+  content: "";
 }
 .question {
   overflow: hidden;
@@ -1403,6 +1412,9 @@ header .back div {
 .navico.type14 {
   background-position: -110px -440px;
 }
+.navico.type15 {
+  background-position: -110px -550px;
+}
 .nav-box a {
   color: #333;
 }
@@ -1516,6 +1528,9 @@ header .back div {
 }
 .icobg.icobg9 {
   background: #e39761;
+}
+.icobg.icobg10 {
+  background: #ffce56;
 }
 .hotel-img-box {
   height: 200px;
@@ -1828,6 +1843,15 @@ em {
 }
 .rooms-list.sp > li {
   padding: 0;
+}
+.order-btn.only-hy {
+  height: 45px;
+  line-height: 45px;
+}
+.order-btn.only-hy:before {
+  content: "会员专享";
+  line-height: 45px;
+  font-size: 12px;
 }
 /************end******************/
 .list-head {
@@ -2170,4 +2194,38 @@ a:active {
 }
 .yu-tpad10 {
   padding-top: 10px;
+}
+.img-box {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.img-box img {
+  width: 100%;
+  height: 100%;
+}
+.yu-bpad60 {
+  padding-bottom: 60px;
+}
+.yu-font30 {
+  font-size: 30px;
+}
+.yu-bmar20 {
+  margin-bottom: 20px;
+}
+.hyzx-ico {
+  width: 75px;
+  height: 20px;
+  background: url(../images/hyzx.png) no-repeat;
+  background-size: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  margin: 5px 0 0 5px;
+}
+.hyzx-ico > p {
+  padding-left: 20px;
+}
+.yu-j-c {
+  justify-content: center;
 }
